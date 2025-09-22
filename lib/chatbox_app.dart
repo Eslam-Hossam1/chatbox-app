@@ -1,3 +1,4 @@
+import 'package:chatbox_app/core/routing/app_router.dart';
 import 'package:flutter/material.dart';
 
 class ChatboxApp extends StatelessWidget {
@@ -5,6 +6,8 @@ class ChatboxApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp();
+    return MaterialApp.router(
+      routerConfig: AppRouter.router,
+    );
   }
 }
