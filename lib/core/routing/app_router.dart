@@ -6,7 +6,7 @@ import 'package:go_router/go_router.dart';
 class AppRouter {
   static final rootNavigatorKey = GlobalKey<NavigatorState>();
   static final router = GoRouter(
-    initialLocation: RoutePaths.initialRoute,
+    initialLocation: RoutePaths.onboarding,
     navigatorKey: rootNavigatorKey,
     debugLogDiagnostics: true,
     routes: AppRoutes.routes,
