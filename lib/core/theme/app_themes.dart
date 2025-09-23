@@ -1,9 +1,11 @@
 import 'package:chatbox_app/core/theme/app_colors.dart';
 import 'package:chatbox_app/core/theme/custom_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 abstract class AppThemes {
   static final ThemeData lightTheme = ThemeData(
+    textTheme: GoogleFonts.interTextTheme(),
     dialogBackgroundColor: AppColors.lightDialogBackground,
     scaffoldBackgroundColor: AppColors.lightScaffoldBackground,
     brightness: Brightness.light,
@@ -26,6 +28,7 @@ abstract class AppThemes {
   );
 
   static final ThemeData darkTheme = ThemeData(
+    textTheme: GoogleFonts.interTextTheme(),
     dialogBackgroundColor: AppColors.darkDialogBackground,
     scaffoldBackgroundColor: AppColors.darkScaffoldBackground,
     colorScheme: ColorScheme.dark(
