@@ -1,4 +1,5 @@
 import 'package:chatbox_app/core/theme/theme_colors_extension.dart';
+import 'package:chatbox_app/features/onboarding/presentation/view/widgets/onboarding_gradients.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingView extends StatelessWidget {
@@ -8,6 +9,16 @@ class OnboardingView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: context.scaffoldBackgroundColor,
+            body: SizedBox(
+        width: double.infinity,
+        height: double.infinity,
+        child: Stack(
+          children: [
+            ...onBoardingGradients,
+          ],
+        ),
+      ),
+
     );
   }
 }
