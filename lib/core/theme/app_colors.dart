@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColors {
+  static const List<Color> greenLinearGradient = [
+    Color(0xFF208D7F),
+    Color(0xFF0FE16D),
+  ];
+
   // Light Theme Colors
   static const Color lightPrimary = Color(0xFF24786D);
   static const Color lightSecondary = Color(0xFFF04A4C);
@@ -27,8 +32,4 @@ abstract class AppColors {
   static const Color darkFormColor = Color(0xFF2E2E2E);
   static const Color darkToastBackground = Color(0xFF2E2E2E);
   static const Color darkCachedNetworkImagePlacholderColor = Color(0xFF3A3A3A);
-
-  // general colors
-  static const Color logoutText = Color(0xFFC42C48);
-  static const Color logoutIcon = Color(0xFFD64864);
 }
