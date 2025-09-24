@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 final List<Widget> onBoardingGradients = [
   Positioned(
-    top: -200,
-    right: -200,
+    top: -200.h,
+    right: -200.w,
     child: Container(
-      width: 600,
-      height: 600,
+      width: 600.w,
+      height: 600.h,
       decoration: BoxDecoration(
         gradient: RadialGradient(
           colors: [
@@ -22,10 +23,10 @@ final List<Widget> onBoardingGradients = [
   ),
   Positioned(
     top: 0,
-    right: -100,
+    right: -100.w,
     child: Container(
-      width: 500,
-      height: 500,
+      width: 500.w,
+      height: 500.h,
       decoration: BoxDecoration(
         gradient: RadialGradient(
           colors: [
@@ -40,11 +41,11 @@ final List<Widget> onBoardingGradients = [
     ),
   ),
   Positioned(
-    top: 200,
-    left: -50,
+    top: 200.h,
+    left: -50.w,
     child: Container(
-      width: 450,
-      height: 450,
+      width: 450.w,
+      height: 450.h,
       decoration: BoxDecoration(
         gradient: RadialGradient(
           colors: [
@@ -59,11 +60,11 @@ final List<Widget> onBoardingGradients = [
     ),
   ),
   Positioned(
-    top: 350,
-    left: -150,
+    top: 350.h,
+    left: -150.w,
     child: Container(
-      width: 400,
-      height: 400,
+      width: 400.w,
+      height: 400.h,
       decoration: BoxDecoration(
         gradient: RadialGradient(
           colors: [
@@ -78,11 +79,11 @@ final List<Widget> onBoardingGradients = [
     ),
   ),
   Positioned(
-    top: 180,
-    left: -50,
+    top: 180.h,
+    left: -50.w,
     child: Container(
-      width: 350,
-      height: 350,
+      width: 350.w,
+      height: 350.h,
       decoration: BoxDecoration(
         gradient: RadialGradient(
           colors: [
