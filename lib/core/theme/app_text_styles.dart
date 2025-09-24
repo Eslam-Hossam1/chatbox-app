@@ -4,199 +4,445 @@ import 'package:flutter/widgets.dart';
 
 abstract class AppTextStyles {
   // Font size 68
-  static TextStyle bold68(context) {
+  static TextStyle bold68(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w700,
-      fontSize: _getResponsiveText(context, baseFontSize: 68),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 68,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
-  static TextStyle regular68(context) {
+  static TextStyle regular68(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w400,
-      fontSize: _getResponsiveText(context, baseFontSize: 68),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 68,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
   // Font size 40
-  static TextStyle bold40(context) {
+  static TextStyle bold40(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w700,
-      fontSize: _getResponsiveText(context, baseFontSize: 40),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 40,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
-  static TextStyle medium40(context) {
+  static TextStyle medium40(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: _getResponsiveText(context, baseFontSize: 40),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 40,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
   // Font size 26
-  static TextStyle regular26(context) {
+  static TextStyle regular26(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w400,
-      fontSize: _getResponsiveText(context, baseFontSize: 26),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 26,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
   // Font size 25
-  static TextStyle bold25(context) {
+  static TextStyle bold25(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w700,
-      fontSize: _getResponsiveText(context, baseFontSize: 25),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 25,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
   // Font size 22
-  static TextStyle bold22(context) {
+  static TextStyle bold22(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w700,
-      fontSize: _getResponsiveText(context, baseFontSize: 22),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 22,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
   // Font size 20
-  static TextStyle medium20(context) {
+  static TextStyle medium20(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: _getResponsiveText(context, baseFontSize: 20),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 20,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
-  static TextStyle bold20(context) {
+  static TextStyle bold20(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w700,
-      fontSize: _getResponsiveText(context, baseFontSize: 20),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 20,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
   // Font size 18
-  static TextStyle bold18(context) {
+  static TextStyle bold18(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w700,
-      fontSize: _getResponsiveText(context, baseFontSize: 18),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 18,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
-  static TextStyle regular18(context) {
+  static TextStyle regular18(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w400,
-      fontSize: _getResponsiveText(context, baseFontSize: 18),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 18,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
-  static TextStyle medium18(context) {
+  static TextStyle medium18(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: _getResponsiveText(context, baseFontSize: 18),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 18,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
   // Font size 16
-  static TextStyle bold16(context) {
+  static TextStyle bold16(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w700,
-      fontSize: _getResponsiveText(context, baseFontSize: 16),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 16,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
-  static TextStyle medium16(context) {
+  static TextStyle medium16(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: _getResponsiveText(context, baseFontSize: 16),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 16,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
+    );
+  }
+
+  static TextStyle regular16(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
+    return TextStyle(
+      fontWeight: FontWeight.w400,
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 16,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
   // Font size 14
-  static TextStyle regular14(context) {
+  static TextStyle regular14(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w400,
-      fontSize: _getResponsiveText(context, baseFontSize: 14),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 14,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
-  static TextStyle medium14(context) {
+  static TextStyle medium14(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: _getResponsiveText(context, baseFontSize: 14),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 14,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
-  static TextStyle bold14(context) {
+  static TextStyle bold14(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w700,
-      fontSize: _getResponsiveText(context, baseFontSize: 14),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 14,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
   // Font size 13
-  static TextStyle regular13(context) {
+  static TextStyle regular13(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w400,
-      fontSize: _getResponsiveText(context, baseFontSize: 13),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 13,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
-  static TextStyle medium13(context) {
+  static TextStyle medium13(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: _getResponsiveText(context, baseFontSize: 13),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 13,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
   // Font size 12
-  static TextStyle regular12(context) {
+  static TextStyle regular12(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w400,
-      fontSize: _getResponsiveText(context, baseFontSize: 12),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 12,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
-  static TextStyle medium12(context) {
+  static TextStyle medium12(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: _getResponsiveText(context, baseFontSize: 12),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 12,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
   // Font size 10
-  static TextStyle regular10(context) {
+  static TextStyle regular10(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w400,
-      fontSize: _getResponsiveText(context, baseFontSize: 10),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 10,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
-  static TextStyle medium10(context) {
+  static TextStyle medium10(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: _getResponsiveText(context, baseFontSize: 10),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 10,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
     );
   }
 
-  static TextStyle textStyleAwesomeDialogTitle(BuildContext context) {
+  static TextStyle textStyleAwesomeDialogTitle(
+    BuildContext context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w600,
-      fontSize: _getResponsiveText(context, baseFontSize: 20),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 20,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
       color: context.mainTextColor,
     );
   }
 
-  static TextStyle textStyleAwesomeDialogDesc(BuildContext context) {
+  static TextStyle textStyleAwesomeDialogDesc(
+    BuildContext context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     return TextStyle(
       fontWeight: FontWeight.w400,
-      fontSize: _getResponsiveText(context, baseFontSize: 14),
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 14,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
       color: context.mainTextColor,
     );
   }
 
-  static double _getResponsiveText(context, {required double baseFontSize}) {
+  static double _getResponsiveText(
+    context, {
+    required double baseFontSize,
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
     double scaleFactor = _getScaleFactor(context);
     double responsizeTextFontSize = scaleFactor * baseFontSize;
-    double lowerLimit = baseFontSize * .75;
-    double upperLimit = baseFontSize * 1.25;
+    double lowerLimit = baseFontSize * (lowerLimitRatio ?? .75);
+    double upperLimit = baseFontSize * (upperLimitRatio ?? 1.25);
 
     return responsizeTextFontSize.clamp(lowerLimit, upperLimit);
   }
