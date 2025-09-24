@@ -1,15 +1,21 @@
+import 'package:chatbox_app/core/di/service_locator.dart';
+import 'package:chatbox_app/core/routing/routes_paths.dart';
+import 'package:chatbox_app/core/services/onboarding_cache_service.dart';
 import 'package:chatbox_app/core/widget/custom_gradient_text_button.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class GetStartedButton extends StatelessWidget {
   const GetStartedButton({
     super.key,
   });
-
   @override
   Widget build(BuildContext context) {
     return CustomGradientTextButton(
-      onTap: () {},
+      onTap: () async {
+        getIt<OnBoardingCacheService>().setOnBoardingCompletedToTrue();
+        context.go(RoutePaths.signUp);
+      },
       buttontext: 'Get Started',
     );
   }
