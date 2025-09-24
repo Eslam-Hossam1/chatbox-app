@@ -1,6 +1,7 @@
 import 'package:chatbox_app/core/utils/assets.dart';
 import 'package:chatbox_app/core/widget/app_padding.dart';
 import 'package:chatbox_app/core/widget/sliver_height_space.dart';
+import 'package:chatbox_app/features/onboarding/presentation/view/widgets/connects_friends_text_section.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -23,6 +24,13 @@ class OnboardingViewBody extends StatelessWidget {
               Assets.imagesSvgsOnboardingChatbox,
               width: 100.w,
             ),
+          ),
+          SliverHeightSpace(
+            height: 50,
+          ),
+          ConnectsFriendsTextSection(),
+          SliverHeightSpace(
+            height: 16,
           ),
         ],
       ),
