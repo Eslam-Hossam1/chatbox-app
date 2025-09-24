@@ -1,0 +1,15 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class SliverWidthSpace extends StatelessWidget {
+  const SliverWidthSpace({super.key, required this.width});
+  final double width;
+  @override
+  Widget build(BuildContext context) {
+    return SliverToBoxAdapter(
+      child: SizedBox(
+        width: width.w,
+      ),
+    );
+  }
+}
