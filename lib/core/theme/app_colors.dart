@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColors {
-  static const List<Color> greenLinearGradient = [
-    Color(0xFF208D7F),
-    Color(0xFF0FE16D),
-  ];
-
   // Light Theme Colors
   static const Color lightPrimary = Color(0xFF24786D);
   static const Color lightSecondary = Color(0xFFF04A4C);
