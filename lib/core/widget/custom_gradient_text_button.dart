@@ -13,7 +13,6 @@ class CustomGradientTextButton extends StatelessWidget {
       child: Container(
         width: double.infinity,
         height: 48.h,
-        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
         decoration: BoxDecoration(
           gradient: const LinearGradient(
             colors: [
