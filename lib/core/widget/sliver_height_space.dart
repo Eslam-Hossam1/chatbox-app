@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class SliverHeightSpace extends StatelessWidget {
   const SliverHeightSpace({super.key, required this.height});
 
-  ///give it as row double don't use .h i already used
+  ///give it as row double don't use .h it already used
   final double height;
   @override
   Widget build(BuildContext context) {

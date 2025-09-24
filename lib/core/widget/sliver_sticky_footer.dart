@@ -8,7 +8,7 @@ class SliverStickyFooter extends StatelessWidget {
     required this.children,
   });
 
-  ///give it as row double don't use .h i already used
+  ///give it as row double don't use .h it already used
   final double? bottomPadding;
   final List<Widget> children;
   @override
