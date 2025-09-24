@@ -1,5 +1,5 @@
 import 'package:chatbox_app/core/widget/app_padding.dart';
-import 'package:chatbox_app/core/widget/sliver_height_space.dart';
+import 'package:chatbox_app/core/widget/spacing/sliver_height_space.dart';
 import 'package:chatbox_app/core/widget/sliver_sticky_footer.dart';
 import 'package:chatbox_app/features/onboarding/presentation/view/widgets/chat_box_svg.dart';
 import 'package:chatbox_app/features/onboarding/presentation/view/widgets/connects_friends_text_section.dart';
