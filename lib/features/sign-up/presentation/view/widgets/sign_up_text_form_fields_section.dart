@@ -1,3 +1,4 @@
+import 'package:chatbox_app/core/widget/sliver_auth_password_text_form_field.dart';
 import 'package:chatbox_app/core/widget/sliver_auth_text_form_field.dart';
 import 'package:chatbox_app/core/widget/spacing/sliver_height_space.dart';
 import 'package:flutter/material.dart';
@@ -27,14 +28,10 @@ class SignUpTextFormFieldsSection extends StatelessWidget {
           hint: 'Email, e.g. example@gmail.com',
         ),
         SliverHeightSpace(height: heightSpace),
-        SliverAuthTextFormField(
+        SliverAuthPasswordTextFormField(
           title: 'Password',
-          hint: 'Password, min 6 characters, one uppercase, one number',
-        ),
-        SliverHeightSpace(height: heightSpace),
-        SliverAuthTextFormField(
-          title: 'ConfirmPassword',
-          hint: 'Password Again',
+          hint: 'Password',
+          passwordStandards: 'at least 6 characters, one number',
         ),
         SliverHeightSpace(height: heightSpace),
       ],
