@@ -1,8 +1,7 @@
-
-import 'package:chatbox_app/core/widget/clickable_text.dart';
-import 'package:chatbox_app/core/widget/custom_text_button.dart';
 import 'package:chatbox_app/core/widget/sliver_sticky_footer.dart';
 import 'package:chatbox_app/core/widget/spacing/height_space.dart';
+import 'package:chatbox_app/features/sign-up/presentation/view/widgets/already_have_an_account.dart';
+import 'package:chatbox_app/features/sign-up/presentation/view/widgets/sign_up_button.dart';
 import 'package:flutter/material.dart';
 
 class SignUpButtonAndAlreadyHaveAccountSection extends StatelessWidget {
@@ -15,13 +14,9 @@ class SignUpButtonAndAlreadyHaveAccountSection extends StatelessWidget {
     return SliverStickyFooter(
       bottomPadding: 20,
       children: [
-        CustomTextButton(
-          width: double.infinity,
-          text: 'Sign Up',
-          onPressed: () {},
-        ),
+        SignUpButton(),
         HeightSpace(height: 16),
-        ClickableText(text: 'Already have an account? Login'),
+        AlreadyHaveAnAccount(),
       ],
     );
   }
