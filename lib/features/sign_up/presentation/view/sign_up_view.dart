@@ -1,4 +1,4 @@
-import 'package:chatbox_app/features/sign-up/presentation/view/widgets/sign_up_view_body.dart';
+import 'package:chatbox_app/features/sign_up/presentation/view/widgets/sign_up_view_body.dart';
 import 'package:flutter/material.dart';
 
 class SignUpView extends StatelessWidget {
