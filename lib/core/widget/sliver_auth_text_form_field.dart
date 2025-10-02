@@ -8,9 +8,13 @@ class SliverAuthTextFormField extends StatelessWidget {
     super.key,
     required this.title,
     required this.hint,
+    required this.onSaved,
+    required this.validator,
   });
   final String title;
   final String hint;
+  final void Function(String?) onSaved;
+  final String Function(String?) validator;
   @override
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
@@ -25,6 +29,8 @@ class SliverAuthTextFormField extends StatelessWidget {
           ),
           CustomTextFormField(
             hintText: hint,
+            onSaved: onSaved,
+            validator: validator,
           )
         ],
       ),
