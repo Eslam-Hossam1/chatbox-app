@@ -10,7 +10,7 @@ class SignUpUsecase implements Usecase<ApiFailure, void, SignUpParams> {
   SignUpUsecase(this._signUpRepo);
 
   @override
-  Future<Either<ApiFailure, void>> call(SignUpParams params) {
-    return _signUpRepo.signUp(params);
+  Future<Either<ApiFailure, void>> call(SignUpParams signUpParams) {
+    return _signUpRepo.signUp(signUpParams: signUpParams);
   }
 }
