@@ -2,6 +2,7 @@ import 'package:chatbox_app/core/utils/app_regex.dart';
 
 abstract class FormValidators {
   static const String thisFieldRequired = 'This field required';
+  static const String atLeastSixCharacters = 'At least 6 characters';
   static const String enterCompletePin = 'Please enter the complete PIN code.';
   static const String invalidEmail =
       'The email address is not valid. Please enter a valid email.';
@@ -34,7 +35,7 @@ abstract class FormValidators {
 
   static String? passwordTextFormFieldValidator(String? value) {
     if (isValueEmpty(value) || value!.length < 6) {
-      return enterCompletePin;
+      return atLeastSixCharacters;
     } else {
       return null;
     }
