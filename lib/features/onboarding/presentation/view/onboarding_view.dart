@@ -1,4 +1,3 @@
-import 'package:chatbox_app/core/theme/theme_colors_extension.dart';
 import 'package:chatbox_app/features/onboarding/presentation/view/widgets/onboarding_gradients.dart';
 import 'package:chatbox_app/features/onboarding/presentation/view/widgets/onboarding_view_body.dart';
 import 'package:flutter/material.dart';
