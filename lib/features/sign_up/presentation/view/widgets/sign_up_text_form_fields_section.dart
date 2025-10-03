@@ -32,7 +32,7 @@ class SignUpTextFormFieldsSection extends StatelessWidget {
         SliverHeightSpace(height: heightSpace),
         PasswordSliverTextFormField(
           onSaved: (value) => signUpCubit.password = value ?? '',
-          passwordStandards: 'At least 6 characters',
+          hint: 'At least 6 characters',
         ),
         SliverHeightSpace(height: heightSpace),
       ],
