@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomGradientTextButton extends StatelessWidget {
-  const CustomGradientTextButton({super.key, required this.buttontext, required this.onTap});
+  const CustomGradientTextButton(
+      {super.key, required this.buttontext, required this.onTap});
   final String buttontext;
   final VoidCallback onTap;
   @override

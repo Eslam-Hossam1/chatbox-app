@@ -22,7 +22,7 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: width,
-      height: 48.h ,
+      height: 48.h,
       child: TextButton(
         style: TextButton.styleFrom(
           backgroundColor: backgroundColor ?? context.primaryColor,

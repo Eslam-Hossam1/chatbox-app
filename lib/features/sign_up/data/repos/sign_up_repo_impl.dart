@@ -5,7 +5,7 @@ import 'package:chatbox_app/features/sign_up/domain/params/sign_up_params.dart';
 import 'package:chatbox_app/features/sign_up/domain/sign_up_repo.dart';
 import 'package:dartz/dartz.dart';
 
-class SignUpRepoImpl implements SignUpRepo{
+class SignUpRepoImpl implements SignUpRepo {
   final SignUpRemoteDataSource _signUpRemoteDataSource;
 
   SignUpRepoImpl({required SignUpRemoteDataSource signUpRemoteDataSource})

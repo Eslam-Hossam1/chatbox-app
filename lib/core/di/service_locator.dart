@@ -16,7 +16,7 @@ Future<void> setupServiceLocator() async {
       sharedPreferencesHelper: getIt<SharedPreferencesHelper>(),
     ),
   );
- 
+
   getIt.registerSingleton<DioConsumer>(
     DioConsumer(
       dio: Dio(),

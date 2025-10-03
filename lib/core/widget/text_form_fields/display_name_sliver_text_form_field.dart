@@ -7,7 +7,7 @@ class DisplayNameSliverTextFormField extends StatelessWidget {
     super.key,
     required this.onSaved,
   });
-final void Function(String?) onSaved;
+  final void Function(String?) onSaved;
   @override
   Widget build(BuildContext context) {
     return SliverAuthTextFormField(

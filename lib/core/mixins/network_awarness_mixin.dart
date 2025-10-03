@@ -6,7 +6,6 @@ import 'package:chatbox_app/core/networking/network_connection_checker/network_c
 import 'package:chatbox_app/core/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
-
 /// A mixin to handle internet connectivity changes and show snack bars accordingly.
 /// Can be reused in any StatefulWidget that needs network awareness.
 mixin NetworkAwarnessMixin<T extends StatefulWidget> on State<T> {
@@ -52,8 +51,7 @@ mixin NetworkAwarnessMixin<T extends StatefulWidget> on State<T> {
         backgroundColor: Colors.red,
         content: Text(
           'No Internet Connection',
-          style:
-              AppTextStyles.medium14(context).copyWith(color: Colors.white),
+          style: AppTextStyles.medium14(context).copyWith(color: Colors.white),
         ),
         showCloseIcon: true,
         // Keep it for a long time until internet returns
@@ -69,8 +67,7 @@ mixin NetworkAwarnessMixin<T extends StatefulWidget> on State<T> {
         backgroundColor: Colors.green,
         content: Text(
           "Yay! You're back online.",
-          style:
-              AppTextStyles.medium14(context).copyWith(color: Colors.white),
+          style: AppTextStyles.medium14(context).copyWith(color: Colors.white),
         ),
         duration: const Duration(seconds: 3),
       ),

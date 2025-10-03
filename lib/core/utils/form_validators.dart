@@ -1,4 +1,3 @@
-
 import 'package:chatbox_app/core/utils/app_regex.dart';
 
 abstract class FormValidators {
@@ -32,6 +31,7 @@ abstract class FormValidators {
       return null;
     }
   }
+
   static String? passwordTextFormFieldValidator(String? value) {
     if (isValueEmpty(value) || value!.length < 6) {
       return enterCompletePin;

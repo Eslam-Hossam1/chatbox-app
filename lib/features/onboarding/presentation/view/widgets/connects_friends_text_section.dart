@@ -14,14 +14,16 @@ class ConnectsFriendsTextSection extends StatelessWidget {
         children: [
           Text(
             'Connect\nfriends',
-            style: AppTextStyles.regular68(context, upperLimitRatio: 1.75).copyWith(
+            style: AppTextStyles.regular68(context, upperLimitRatio: 1.75)
+                .copyWith(
               color: Colors.white,
               height: 78 / 68,
             ),
           ),
           Text(
             'easily &\nquickly',
-            style: AppTextStyles.bold68(context, upperLimitRatio: 1.75).copyWith(
+            style:
+                AppTextStyles.bold68(context, upperLimitRatio: 1.75).copyWith(
               color: Colors.white,
               height: 78 / 68,
             ),
