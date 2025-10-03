@@ -1,4 +1,4 @@
-import 'package:chatbox_app/core/widget/sliver_auth_header_text.dart';
+import 'package:chatbox_app/core/widgets/sliver_auth_header_text.dart';
 import 'package:flutter/material.dart';
 
 class SignUpHeader extends StatelessWidget {

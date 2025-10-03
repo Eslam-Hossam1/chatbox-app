@@ -1,4 +1,4 @@
-import 'package:chatbox_app/core/widget/custom_loading_button.dart';
+import 'package:chatbox_app/core/widgets/buttons/custom_loading_button.dart';
 import 'package:chatbox_app/features/sign_up/presentation/manager/sign_up_cubit/sign_up_cubit.dart';
 import 'package:chatbox_app/features/sign_up/presentation/manager/sign_up_cubit/sign_up_state.dart';
 import 'package:chatbox_app/features/sign_up/presentation/view/widgets/sign_up_bottom_section/sign_up_button/sign_up_button.dart';

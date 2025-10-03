@@ -7,7 +7,9 @@ class OtpView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('OTP Verification',),
+        child: Text(
+          'OTP Verification',
+        ),
       ),
     );
   }

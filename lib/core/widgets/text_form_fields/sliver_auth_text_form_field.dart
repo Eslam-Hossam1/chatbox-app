@@ -1,22 +1,20 @@
 import 'package:chatbox_app/core/theme/app_text_styles.dart';
 import 'package:chatbox_app/core/theme/theme_colors_extension.dart';
-import 'package:chatbox_app/core/utils/form_validators.dart';
-import 'package:chatbox_app/core/widget/spacing/height_space.dart';
-import 'package:chatbox_app/features/onboarding/presentation/view/widgets/obsecure_text_form_field.dart';
+import 'package:chatbox_app/core/widgets/text_form_fields/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 
-class PasswordSliverTextFormField extends StatelessWidget {
-  const PasswordSliverTextFormField({
+class SliverAuthTextFormField extends StatelessWidget {
+  const SliverAuthTextFormField({
     super.key,
-    this.title = 'Password',
-    this.hint = 'Enter your password',
+    required this.title,
+    required this.hint,
     required this.onSaved,
+    required this.validator,
   });
-
   final String title;
   final String hint;
   final void Function(String?) onSaved;
-
+  final String? Function(String?) validator;
   @override
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
@@ -29,12 +27,11 @@ class PasswordSliverTextFormField extends StatelessWidget {
               color: context.primaryColor,
             ),
           ),
-          ObsecureTextFormField(
-            hint: hint,
+          CustomTextFormField(
+            hintText: hint,
             onSaved: onSaved,
-            validator: FormValidators.passwordTextFormFieldValidator,
-          ),
-          HeightSpace(height: 12),
+            validator: validator,
+          )
         ],
       ),
     );

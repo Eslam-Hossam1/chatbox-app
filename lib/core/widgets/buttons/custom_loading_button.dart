@@ -1,5 +1,5 @@
-import 'package:chatbox_app/core/widget/custom_button.dart';
-import 'package:chatbox_app/core/widget/custom_circular_progress_indecator.dart';
+import 'package:chatbox_app/core/widgets/buttons/custom_button.dart';
+import 'package:chatbox_app/core/widgets/custom_circular_progress_indecator.dart';
 import 'package:flutter/material.dart';
 
 class CustomLoadingButton extends StatelessWidget {

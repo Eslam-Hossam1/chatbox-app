@@ -1,6 +1,6 @@
 import 'package:chatbox_app/core/theme/app_text_styles.dart';
 import 'package:chatbox_app/core/theme/theme_colors_extension.dart';
-import 'package:chatbox_app/core/widget/clickable_text.dart';
+import 'package:chatbox_app/core/widgets/buttons/clickable_text.dart';
 import 'package:flutter/material.dart';
 
 class AlreadyHaveAnAccount extends StatelessWidget {

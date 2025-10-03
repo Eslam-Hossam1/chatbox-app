@@ -10,8 +10,7 @@ class SignUpRemoteDataSourceImpl implements SignUpRemoteDataSource {
       : _apiConsumer = apiConsumer;
 
   @override
-  Future<void> signUp(
-      {required SignUpRequestBody signUpRequestBody}) async {
+  Future<void> signUp({required SignUpRequestBody signUpRequestBody}) async {
     return await _apiConsumer.post(
       EndPoints.signUp,
       data: signUpRequestBody.toJson(),
