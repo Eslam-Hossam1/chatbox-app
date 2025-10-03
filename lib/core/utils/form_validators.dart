@@ -32,6 +32,13 @@ abstract class FormValidators {
       return null;
     }
   }
+  static String? passwordTextFormFieldValidator(String? value) {
+    if (isValueEmpty(value) || value!.length < 6) {
+      return enterCompletePin;
+    } else {
+      return null;
+    }
+  }
 
   static bool isValueEmpty(String? value) {
     if (value == null || value.isEmpty) {

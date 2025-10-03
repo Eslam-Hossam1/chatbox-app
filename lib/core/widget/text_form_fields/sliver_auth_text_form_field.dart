@@ -1,6 +1,6 @@
 import 'package:chatbox_app/core/theme/app_text_styles.dart';
 import 'package:chatbox_app/core/theme/theme_colors_extension.dart';
-import 'package:chatbox_app/core/widget/custom_text_form_field.dart';
+import 'package:chatbox_app/core/widget/text_form_fields/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 
 class SliverAuthTextFormField extends StatelessWidget {
@@ -14,7 +14,7 @@ class SliverAuthTextFormField extends StatelessWidget {
   final String title;
   final String hint;
   final void Function(String?) onSaved;
-  final String Function(String?) validator;
+  final String? Function(String?) validator;
   @override
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
