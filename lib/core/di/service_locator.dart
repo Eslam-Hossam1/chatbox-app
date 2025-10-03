@@ -1,5 +1,7 @@
 import 'package:chatbox_app/core/cache/shared_pref/shared_prefernce_helper.dart';
+import 'package:chatbox_app/core/networking/dio_consumer.dart';
 import 'package:chatbox_app/core/services/onboarding_cache_service.dart';
+import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -9,6 +11,12 @@ Future<void> setupServiceLocator() async {
   getIt.registerSingleton<OnBoardingCacheService>(
     OnBoardingCacheService(
       sharedPreferencesHelper: getIt<SharedPreferencesHelper>(),
+    ),
+  );
+
+  getIt.registerSingleton<DioConsumer>(
+    DioConsumer(
+      dio: Dio(),
     ),
   );
 }

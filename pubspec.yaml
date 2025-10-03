@@ -28,7 +28,11 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  awesome_dialog: ^3.3.0
+  connectivity_plus: ^7.0.0
   cupertino_icons: ^1.0.8
+  dartz: ^0.10.1
+  dio: ^5.9.0
   flutter:
     sdk: flutter
   flutter_bloc: ^9.1.1
@@ -39,13 +43,18 @@ dependencies:
   go_router: ^16.1.0
   google_fonts: ^6.2.0
   hydrated_bloc: ^10.1.1
+  json_annotation: ^4.9.0
   path_provider: ^2.1.5
+  pretty_dio_logger: ^1.4.0
+  pretty_logger: ^1.0.0
   shared_preferences: ^2.5.3
 
 dev_dependencies:
+  build_runner: ^2.4.15
   flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
+  json_serializable: ^6.9.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

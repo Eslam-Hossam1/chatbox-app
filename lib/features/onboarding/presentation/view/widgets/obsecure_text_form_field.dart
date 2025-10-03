@@ -1,7 +1,7 @@
 import 'package:chatbox_app/core/theme/app_text_styles.dart';
 import 'package:chatbox_app/core/theme/theme_colors_extension.dart';
-import 'package:chatbox_app/core/widget/closed_eye_icon.dart';
-import 'package:chatbox_app/core/widget/opened_eye_svg.dart';
+import 'package:chatbox_app/core/widgets/closed_eye_icon.dart';
+import 'package:chatbox_app/core/widgets/opened_eye_svg.dart';
 import 'package:flutter/material.dart';
 
 class ObsecureTextFormField extends StatefulWidget {
@@ -33,6 +33,7 @@ class _ObsecureTextFormFieldState extends State<ObsecureTextFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: widget.validator,
       onSaved: widget.onSaved,
       onChanged: widget.onChanged,
       onTapOutside: (event) => FocusScope.of(context).unfocus(),
