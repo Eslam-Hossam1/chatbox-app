@@ -33,6 +33,7 @@ class _ObsecureTextFormFieldState extends State<ObsecureTextFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: widget.validator,
       onSaved: widget.onSaved,
       onChanged: widget.onChanged,
       onTapOutside: (event) => FocusScope.of(context).unfocus(),
