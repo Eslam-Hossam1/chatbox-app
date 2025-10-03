@@ -1,6 +1,7 @@
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:chatbox_app/core/Functions/custom_adaptive_awesome_dialog.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 abstract class DialogHelper {
   static void showErrorDialog(
@@ -66,19 +67,21 @@ abstract class DialogHelper {
     customAdaptiveAwesomeDialog(
       context,
       dialogType: DialogType.warning,
-      title: title ?? 'Warning',
+      title: title ?? 'Session Expired',
       desc: 'Your session has expired, please login again',
       btnOkOnPress: btnOkOnPress,
-      btnOkText: btnOkText,
+      btnOkText: btnOkText ?? 'OK',
       btnOk: btnOk,
       btnOkColor: btnOkColor,
       onDismissCallback: onDismissCallback,
+      btnCancelColor: btnCancelColor,
+      btnCancelText: btnCanceltext,
     ).show();
   }
 
   static void showSuccessDialog(
     BuildContext context, {
-    required String successMessage,
+    required String message,
     String? title,
     String? btnOkText,
     void Function()? btnOkOnPress,
@@ -90,12 +93,28 @@ abstract class DialogHelper {
       context,
       dialogType: DialogType.success,
       title: title ?? 'Success',
-      desc: successMessage,
-      btnOkOnPress: btnOkOnPress,
-      btnOk: btnOk,
+      desc: message,
+      btnOkOnPress: btnOkOnPress ?? () {},
       btnOkText: btnOkText,
+      btnOk: btnOk,
       btnOkColor: btnOkColor,
       onDismissCallback: onDismissCallback,
     ).show();
   }
+
+  static void showCustomExitConfirmationDialog(BuildContext context,
+      {String? errorMessage, void Function()? btnOkOnPress}) {
+    DialogHelper.showWarningDialog(
+      context,
+      errorMessage: errorMessage ?? _warningExitConfirmationMessage,
+      btnOkOnPress: btnOkOnPress ?? () => context.pop(),
+      btnOkColor: Colors.red,
+      btnOkText: 'Exit',
+      btnCancelColor: Colors.green,
+      btnCanceltext: "Stay",
+    );
+  }
+
+  static final String _warningExitConfirmationMessage =
+      "Are you sure you want to leave? You haven’t completed the verification yet and you may lose your progress.";
 }

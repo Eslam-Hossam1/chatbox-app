@@ -433,6 +433,22 @@ abstract class AppTextStyles {
     );
   }
 
+  static TextStyle textStyleSemiBold34(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
+    return TextStyle(
+      fontWeight: FontWeight.w600,
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 34,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
+    );
+  }
+
   static double _getResponsiveText(
     context, {
     required double baseFontSize,
@@ -441,11 +457,14 @@ abstract class AppTextStyles {
   }) {
     double scaleFactor = _getScaleFactor(context);
     double responsizeTextFontSize = scaleFactor * baseFontSize;
-    double lowerLimit = baseFontSize * (lowerLimitRatio ?? .75);
-    double upperLimit = baseFontSize * (upperLimitRatio ?? 1.25);
+    double lowerLimit = baseFontSize * (lowerLimitRatio ?? defaultLowerLimitRatio);
+    double upperLimit = baseFontSize * (upperLimitRatio ?? defaultUpperLimitRatio);
 
     return responsizeTextFontSize.clamp(lowerLimit, upperLimit);
   }
+
+  static double defaultUpperLimitRatio = 1.5;
+  static double defaultLowerLimitRatio = .75;
 
   static double _getScaleFactor(context) {
     double width = MediaQuery.sizeOf(context).width;
