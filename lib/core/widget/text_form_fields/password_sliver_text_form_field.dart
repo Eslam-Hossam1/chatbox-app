@@ -1,5 +1,6 @@
 import 'package:chatbox_app/core/theme/app_text_styles.dart';
 import 'package:chatbox_app/core/theme/theme_colors_extension.dart';
+import 'package:chatbox_app/core/utils/form_validators.dart';
 import 'package:chatbox_app/core/widget/spacing/height_space.dart';
 import 'package:chatbox_app/features/onboarding/presentation/view/widgets/obsecure_text_form_field.dart';
 import 'package:flutter/material.dart';
@@ -10,12 +11,10 @@ class PasswordSliverTextFormField extends StatelessWidget {
     this.title = 'Password',
     this.hint = 'Enter your password',
     required this.onSaved,
-    this.passwordStandards,
   });
 
   final String title;
   final String hint;
-  final String? passwordStandards;
   final void Function(String?) onSaved;
 
   @override
@@ -33,16 +32,9 @@ class PasswordSliverTextFormField extends StatelessWidget {
           ObsecureTextFormField(
             hint: hint,
             onSaved: onSaved,
+            validator: FormValidators.passwordTextFormFieldValidator,
           ),
           HeightSpace(height: 12),
-          passwordStandards == null
-              ? SizedBox.shrink()
-              : Text(
-                  passwordStandards!,
-                  style: AppTextStyles.regular12(context).copyWith(
-                    color: context.secondaryTextColor,
-                  ),
-                ),
         ],
       ),
     );
