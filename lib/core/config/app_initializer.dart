@@ -5,7 +5,7 @@ import 'package:path_provider/path_provider.dart';
 
 abstract class AppInitializer {
   static Future<void> initialize() async {
-    await _initServiceLocator();
+    await setupServiceLocator();
     await _initHydratedBloc();
   }
 
@@ -15,9 +15,5 @@ abstract class AppInitializer {
           ? HydratedStorageDirectory.web
           : HydratedStorageDirectory((await getTemporaryDirectory()).path),
     );
-  }
-
-  static Future<void> _initServiceLocator() async {
-    await setupServiceLocator();
   }
 }

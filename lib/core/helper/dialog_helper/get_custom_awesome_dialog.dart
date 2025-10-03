@@ -4,7 +4,7 @@ import 'package:chatbox_app/core/theme/theme_colors_extension.dart';
 import 'package:chatbox_app/core/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
-AwesomeDialog customAdaptiveAwesomeDialog(BuildContext context,
+AwesomeDialog getCustomAwesomeDialog(BuildContext context,
     {required DialogType dialogType,
     AnimType? animType,
     required String title,

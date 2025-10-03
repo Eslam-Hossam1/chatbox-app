@@ -1,5 +1,5 @@
 import 'package:awesome_dialog/awesome_dialog.dart';
-import 'package:chatbox_app/core/Functions/custom_adaptive_awesome_dialog.dart';
+import 'package:chatbox_app/core/helper/dialog_helper/get_custom_awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -13,7 +13,7 @@ abstract class DialogHelper {
     void Function(DismissType)? onDismissCallback,
     Widget? btnOk,
   }) {
-    customAdaptiveAwesomeDialog(
+    getCustomAwesomeDialog(
       context,
       dialogType: DialogType.error,
       title: title ?? 'Error',
@@ -37,7 +37,7 @@ abstract class DialogHelper {
     Color? btnCancelColor,
     String? btnCanceltext,
   }) {
-    customAdaptiveAwesomeDialog(
+    getCustomAwesomeDialog(
       context,
       dialogType: DialogType.warning,
       title: title ?? 'Warning',
@@ -64,7 +64,7 @@ abstract class DialogHelper {
     Color? btnCancelColor,
     String? btnCanceltext,
   }) {
-    customAdaptiveAwesomeDialog(
+    getCustomAwesomeDialog(
       context,
       dialogType: DialogType.warning,
       title: title ?? 'Session Expired',
@@ -89,7 +89,7 @@ abstract class DialogHelper {
     Widget? btnOk,
     Color? btnOkColor,
   }) {
-    customAdaptiveAwesomeDialog(
+    getCustomAwesomeDialog(
       context,
       dialogType: DialogType.success,
       title: title ?? 'Success',

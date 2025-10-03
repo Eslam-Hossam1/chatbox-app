@@ -1,4 +1,4 @@
-import 'package:chatbox_app/core/helper/dialog_helper.dart';
+import 'package:chatbox_app/core/helper/dialog_helper/dialog_helper.dart';
 import 'package:chatbox_app/core/routing/routing_helper.dart';
 import 'package:chatbox_app/features/otp/data/models/auth_otp/sign_up_otp_reason.dart';
 import 'package:chatbox_app/features/sign_up/presentation/manager/sign_up_cubit/sign_up_cubit.dart';

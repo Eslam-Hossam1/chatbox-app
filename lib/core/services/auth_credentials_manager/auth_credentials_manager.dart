@@ -1,13 +1,13 @@
 import 'package:chatbox_app/core/services/jwt_decoder/jwt_decoder_service.dart';
-import 'package:chatbox_app/core/cache/secure_storage_helper.dart/secure_storage_helper.dart';
-import 'package:chatbox_app/core/cache/secure_storage_helper.dart/secure_storage_keys.dart';
+import 'package:chatbox_app/core/services/storage_services/secure_storage/secure_storage_service.dart';
+import 'package:chatbox_app/core/services/storage_services/secure_storage/secure_storage_keys.dart';
 import 'package:chatbox_app/core/Functions/remove_bearer.dart';
 
 class AuthCredentialsManager {
-  final SecureStorageHelper secureStorageHelper;
+  final SecureStorageService secureStorageService;
   final JwtDecoderService jwtDecoder;
   AuthCredentialsManager({
-    required this.secureStorageHelper,
+    required this.secureStorageService,
     required this.jwtDecoder,
   });
 
@@ -30,27 +30,39 @@ class AuthCredentialsManager {
   }
 
   Future<String?> getAccessToken() async {
-    return await secureStorageHelper.getString(key: SecureStorageKeys.accessToken);
+    return await secureStorageService.getString(
+      key: SecureStorageKeys.accessToken,
+    );
   }
 
   Future<String?> getRefreshToken() async {
-    return await secureStorageHelper.getString(key: SecureStorageKeys.refreshToken);
+    return await secureStorageService.getString(
+      key: SecureStorageKeys.refreshToken,
+    );
   }
 
   Future<void> storeAccessToken(String token) async {
     token = removeBearer(token);
-    await secureStorageHelper.setData(key: SecureStorageKeys.accessToken, value: token);
+    await secureStorageService.setData(
+      key: SecureStorageKeys.accessToken,
+      value: token,
+    );
     _authCredentialsModel?.accessToken = token;
   }
 
   Future<void> storeRefreshToken(String token) async {
     token = removeBearer(token);
-    await secureStorageHelper.setData(key: SecureStorageKeys.refreshToken, value: token);
+    await secureStorageService.setData(
+      key: SecureStorageKeys.refreshToken,
+      value: token,
+    );
     _authCredentialsModel?.refreshToken = token;
   }
 
-  Future<void> storeTokens(
-      {required String accessToken, required String refreshToken}) async {
+  Future<void> storeTokens({
+    required String accessToken,
+    required String refreshToken,
+  }) async {
     accessToken = removeBearer(accessToken);
     refreshToken = removeBearer(refreshToken);
 
@@ -62,7 +74,7 @@ class AuthCredentialsManager {
   }
 
   Future<void> clearTokens() async {
-    await secureStorageHelper.clear();
+    await secureStorageService.clear();
     _authCredentialsModel?.accessToken = null;
     _authCredentialsModel?.refreshToken = null;
     _authCredentialsModel = null;
