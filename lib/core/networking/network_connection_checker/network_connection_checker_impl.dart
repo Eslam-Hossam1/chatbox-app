@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:chatbox_app/core/networking/network_connection_checker/network_connection_checker.dart';
+import 'network_connection_checker.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 
 /// Implementation of [NetworkConnectionChecker].

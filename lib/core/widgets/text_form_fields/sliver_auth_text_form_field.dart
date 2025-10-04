@@ -1,6 +1,6 @@
-import 'package:chatbox_app/core/theme/app_text_styles.dart';
-import 'package:chatbox_app/core/theme/theme_colors_extension.dart';
-import 'package:chatbox_app/core/widgets/text_form_fields/custom_text_form_field.dart';
+import '../../theme/app_text_styles.dart';
+import '../../theme/theme_colors_extension.dart';
+import 'custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 
 class SliverAuthTextFormField extends StatelessWidget {

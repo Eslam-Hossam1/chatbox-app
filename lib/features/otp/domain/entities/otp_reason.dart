@@ -1,4 +1,4 @@
-import 'package:chatbox_app/features/otp/domain/entities/otp_result.dart';
+import 'otp_result.dart';
 
 abstract interface class OtpReason<T extends OtpResult> {
   final String verifyOtpEndpoint;

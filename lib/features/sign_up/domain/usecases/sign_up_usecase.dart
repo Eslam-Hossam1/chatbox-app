@@ -1,7 +1,7 @@
-import 'package:chatbox_app/core/errors/api_failure.dart';
-import 'package:chatbox_app/core/usecases/usecase.dart';
-import 'package:chatbox_app/features/sign_up/domain/params/sign_up_params.dart';
-import 'package:chatbox_app/features/sign_up/domain/sign_up_repo.dart';
+import '../../../../core/errors/api_failure.dart';
+import '../../../../core/usecases/usecase.dart';
+import '../params/sign_up_params.dart';
+import '../sign_up_repo.dart';
 import 'package:dartz/dartz.dart';
 
 class SignUpUsecase implements Usecase<ApiFailure, void, SignUpParams> {

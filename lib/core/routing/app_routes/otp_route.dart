@@ -1,13 +1,13 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:chatbox_app/core/di/service_locator.dart';
-import 'package:chatbox_app/core/routing/routes_paths.dart';
-import 'package:chatbox_app/features/otp/data/repos/otp_repo_impl.dart';
-import 'package:chatbox_app/features/otp/domain/entities/otp_reason.dart';
-import 'package:chatbox_app/features/otp/domain/usecases/send_otp_usecase.dart';
-import 'package:chatbox_app/features/otp/domain/usecases/verify_otp_usecase.dart';
-import 'package:chatbox_app/features/otp/presentation/manager/otp_cubit/otp_cubit.dart';
-import 'package:chatbox_app/features/otp/presentation/views/otp_view.dart';
+import '../../di/service_locator.dart';
+import '../routes_paths.dart';
+import '../../../features/otp/data/repos/otp_repo_impl.dart';
+import '../../../features/otp/domain/entities/otp_reason.dart';
+import '../../../features/otp/domain/usecases/send_otp_usecase.dart';
+import '../../../features/otp/domain/usecases/verify_otp_usecase.dart';
+import '../../../features/otp/presentation/manager/otp_cubit/otp_cubit.dart';
+import '../../../features/otp/presentation/views/otp_view.dart';
 
 class OtpRoute {
   static GoRoute otp = GoRoute(

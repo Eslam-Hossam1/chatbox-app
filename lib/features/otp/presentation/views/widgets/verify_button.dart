@@ -1,5 +1,5 @@
-import 'package:chatbox_app/core/widgets/buttons/custom_text_button.dart';
-import 'package:chatbox_app/features/otp/presentation/manager/otp_cubit/otp_cubit.dart';
+import '../../../../../core/widgets/buttons/custom_text_button.dart';
+import '../../manager/otp_cubit/otp_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

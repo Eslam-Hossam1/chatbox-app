@@ -1,7 +1,7 @@
 import 'dart:developer';
 
-import 'package:chatbox_app/core/errors/api_error_model/api_error_model.dart';
-import 'package:chatbox_app/core/errors/api_failure.dart';
+import 'api_error_model/api_error_model.dart';
+import 'api_failure.dart';
 import 'package:dio/dio.dart';
 
 class DioApiFailure extends ApiFailure {

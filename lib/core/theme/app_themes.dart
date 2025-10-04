@@ -1,5 +1,5 @@
-import 'package:chatbox_app/core/theme/app_colors.dart';
-import 'package:chatbox_app/core/theme/custom_colors.dart';
+import 'app_colors.dart';
+import 'custom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

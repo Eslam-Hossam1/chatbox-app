@@ -1,10 +1,9 @@
-import 'package:chatbox_app/core/theme/theme_colors_extension.dart';
+import '../../theme/theme_colors_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:chatbox_app/core/theme/app_colors.dart';
-import 'package:chatbox_app/core/theme/app_text_styles.dart';
-import 'package:chatbox_app/core/utils/form_validators.dart';
-import 'package:chatbox_app/core/utils/size_config.dart';
+import '../../theme/app_text_styles.dart';
+import '../../utils/form_validators.dart';
+import '../../utils/size_config.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class CustomPinCodeField extends StatelessWidget {

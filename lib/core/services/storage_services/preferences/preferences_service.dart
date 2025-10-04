@@ -1,9 +1,9 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
-class SharedPreferencesHelper {
+class PreferencesService {
   final SharedPreferences sharedPreferences;
 
-  SharedPreferencesHelper(this.sharedPreferences);
+  PreferencesService(this.sharedPreferences);
 
 // Save data with type-specific handling
   Future<bool> setData({required String key, required dynamic value}) async {

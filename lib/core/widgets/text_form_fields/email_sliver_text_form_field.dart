@@ -1,5 +1,5 @@
-import 'package:chatbox_app/core/utils/form_validators.dart';
-import 'package:chatbox_app/core/widgets/text_form_fields/sliver_auth_text_form_field.dart';
+import '../../utils/form_validators.dart';
+import 'sliver_auth_text_form_field.dart';
 import 'package:flutter/material.dart';
 
 class EmailSliverTextFormField extends StatelessWidget {

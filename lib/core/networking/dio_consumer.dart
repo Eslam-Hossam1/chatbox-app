@@ -1,5 +1,5 @@
-import 'package:chatbox_app/core/networking/api_consumer.dart';
-import 'package:chatbox_app/core/networking/end_points.dart';
+import 'api_consumer.dart';
+import 'end_points.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';

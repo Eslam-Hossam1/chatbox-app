@@ -1,10 +1,10 @@
-import 'package:chatbox_app/core/widgets/app_padding.dart';
-import 'package:chatbox_app/core/widgets/spacing/sliver_height_space.dart';
-import 'package:chatbox_app/core/widgets/sliver_sticky_footer.dart';
-import 'package:chatbox_app/features/onboarding/presentation/view/widgets/chat_box_svg.dart';
-import 'package:chatbox_app/features/onboarding/presentation/view/widgets/connects_friends_text_section.dart';
-import 'package:chatbox_app/features/onboarding/presentation/view/widgets/get_started_button.dart';
-import 'package:chatbox_app/features/onboarding/presentation/view/widgets/our_app_is_perfect_text.dart';
+import '../../../../../core/widgets/app_padding.dart';
+import '../../../../../core/widgets/spacing/sliver_height_space.dart';
+import '../../../../../core/widgets/sliver_sticky_footer.dart';
+import 'chat_box_svg.dart';
+import 'connects_friends_text_section.dart';
+import 'get_started_button.dart';
+import 'our_app_is_perfect_text.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingViewBody extends StatelessWidget {

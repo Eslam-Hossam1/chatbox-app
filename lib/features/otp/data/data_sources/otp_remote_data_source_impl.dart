@@ -1,8 +1,8 @@
-import 'package:chatbox_app/core/networking/api_consumer.dart';
-import 'package:chatbox_app/core/networking/api_keys.dart';
-import 'package:chatbox_app/features/otp/data/data_sources/otp_remote_data_source.dart';
-import 'package:chatbox_app/features/otp/domain/entities/otp_reason.dart';
-import 'package:chatbox_app/features/otp/domain/entities/otp_result.dart';
+import '../../../../core/networking/api_consumer.dart';
+import '../../../../core/networking/api_keys.dart';
+import 'otp_remote_data_source.dart';
+import '../../domain/entities/otp_reason.dart';
+import '../../domain/entities/otp_result.dart';
 
 class OtpRemoteDataSourceImpl implements OtpRemoteDataSource {
   final ApiConsumer _apiConsumer;

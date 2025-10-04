@@ -1,6 +1,6 @@
-import 'package:chatbox_app/core/errors/api_failure.dart';
-import 'package:chatbox_app/features/otp/domain/entities/otp_reason.dart';
-import 'package:chatbox_app/features/otp/domain/entities/otp_result.dart';
+import '../../../../core/errors/api_failure.dart';
+import '../entities/otp_reason.dart';
+import '../entities/otp_result.dart';
 import 'package:dartz/dartz.dart';
 
 abstract interface class OtpRepo{

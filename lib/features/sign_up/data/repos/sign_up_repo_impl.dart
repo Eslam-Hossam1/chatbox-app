@@ -1,9 +1,9 @@
-import 'package:chatbox_app/core/errors/api_failure.dart';
-import 'package:chatbox_app/core/errors/dio_api_failure.dart';
-import 'package:chatbox_app/features/sign_up/data/datasources/sign_up_remote_data_source.dart';
-import 'package:chatbox_app/features/sign_up/data/models/sign_up_request_body.dart';
-import 'package:chatbox_app/features/sign_up/domain/params/sign_up_params.dart';
-import 'package:chatbox_app/features/sign_up/domain/sign_up_repo.dart';
+import '../../../../core/errors/api_failure.dart';
+import '../../../../core/errors/dio_api_failure.dart';
+import '../datasources/sign_up_remote_data_source.dart';
+import '../models/sign_up_request_body.dart';
+import '../../domain/params/sign_up_params.dart';
+import '../../domain/sign_up_repo.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 

@@ -1,5 +1,5 @@
-import 'package:chatbox_app/core/theme/theme_colors_extension.dart';
-import 'package:chatbox_app/core/utils/size_config.dart';
+import 'theme_colors_extension.dart';
+import '../utils/size_config.dart';
 import 'package:flutter/widgets.dart';
 
 abstract class AppTextStyles {

@@ -1,6 +1,6 @@
-import 'package:chatbox_app/core/theme/app_text_styles.dart';
-import 'package:chatbox_app/core/theme/theme_colors_extension.dart';
-import 'package:chatbox_app/features/otp/presentation/views/widgets/resend_code/count_down_timer.dart';
+import '../../../../../../core/theme/app_text_styles.dart';
+import '../../../../../../core/theme/theme_colors_extension.dart';
+import 'count_down_timer.dart';
 import 'package:flutter/material.dart';
 
 class ResendCodeWithTimer extends StatelessWidget {

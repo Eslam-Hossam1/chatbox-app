@@ -1,7 +1,7 @@
-import 'package:chatbox_app/core/networking/api_consumer.dart';
-import 'package:chatbox_app/core/networking/end_points.dart';
-import 'package:chatbox_app/features/sign_up/data/datasources/sign_up_remote_data_source.dart';
-import 'package:chatbox_app/features/sign_up/data/models/sign_up_request_body.dart';
+import '../../../../core/networking/api_consumer.dart';
+import '../../../../core/networking/end_points.dart';
+import 'sign_up_remote_data_source.dart';
+import '../models/sign_up_request_body.dart';
 
 class SignUpRemoteDataSourceImpl implements SignUpRemoteDataSource {
   final ApiConsumer _apiConsumer;

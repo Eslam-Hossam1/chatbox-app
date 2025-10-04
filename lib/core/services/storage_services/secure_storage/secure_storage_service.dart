@@ -1,9 +1,9 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
-class SecureStorageHelper {
+class SecureStorageService {
   final FlutterSecureStorage secureStorage;
 
-  SecureStorageHelper(this.secureStorage);
+  SecureStorageService(this.secureStorage);
 
   // Save data
   Future<void> setData({required String key, required String value}) async {

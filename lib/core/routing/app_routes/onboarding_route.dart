@@ -1,5 +1,5 @@
-import 'package:chatbox_app/core/routing/routes_paths.dart';
-import 'package:chatbox_app/features/onboarding/presentation/view/onboarding_view.dart';
+import '../routes_paths.dart';
+import '../../../features/onboarding/presentation/view/onboarding_view.dart';
 import 'package:go_router/go_router.dart';
 
 class OnboardingRoute {

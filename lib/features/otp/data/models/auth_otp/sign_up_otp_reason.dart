@@ -1,9 +1,9 @@
-import 'package:chatbox_app/core/services/auth_credentials_manager/auth_credentials_manager.dart';
-import 'package:chatbox_app/core/di/service_locator.dart';
-import 'package:chatbox_app/core/networking/end_points.dart';
-import 'package:chatbox_app/core/routing/routes_paths.dart';
-import 'package:chatbox_app/features/otp/data/models/auth_otp/sign_up_otp_result.dart';
-import 'package:chatbox_app/features/otp/domain/entities/otp_reason.dart';
+import '../../../../../core/services/auth_credentials_manager/auth_credentials_manager.dart';
+import '../../../../../core/di/service_locator.dart';
+import '../../../../../core/networking/end_points.dart';
+import '../../../../../core/routing/routes_paths.dart';
+import 'sign_up_otp_result.dart';
+import '../../../domain/entities/otp_reason.dart';
 
 class SignUpOtpReason implements OtpReason<SignUpOtpResult> {
   SignUpOtpReason({
