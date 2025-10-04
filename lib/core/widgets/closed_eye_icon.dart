@@ -1,5 +1,6 @@
-import '../theme/theme_colors_extension.dart';
 import 'package:flutter/material.dart';
+
+import '../theme/theme_colors_extension.dart';
 
 class ClosedEyeIcon extends StatelessWidget {
   const ClosedEyeIcon({

@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
+
 import '../../utils/form_validators.dart';
 import 'sliver_auth_text_form_field.dart';
-import 'package:flutter/material.dart';
 
 class DisplayNameSliverTextFormField extends StatelessWidget {
   const DisplayNameSliverTextFormField({
