@@ -7,15 +7,16 @@ class EmailSliverTextFormField extends StatelessWidget {
   const EmailSliverTextFormField({
     super.key,
     required this.onSaved,
+    this.hint,
   });
 
   final void Function(String?) onSaved;
-
+  final String? hint;
   @override
   Widget build(BuildContext context) {
     return SliverAuthTextFormField(
       title: 'Email',
-      hint: 'Email, e.g. example@gmail.com',
+      hint:hint?? 'Email, e.g. example@gmail.com',
       onSaved: onSaved,
       validator: FormValidators.emailTextFormFieldValidator,
     );

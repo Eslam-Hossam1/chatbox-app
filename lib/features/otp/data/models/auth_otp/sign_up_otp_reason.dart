@@ -17,7 +17,7 @@ class SignUpOtpReason implements OtpReason<SignUpOtpResult> {
   final String sendOtpEndpoint = EndPoints.sendSignUpOtp;
 
   @override
-  final String verifyOtpEndpoint = EndPoints.verifyAuthOtp;
+  final String verifyOtpEndpoint = EndPoints.verifySignUpOtp;
 
   @override
   final String toGoViewPath = RoutePaths.home;

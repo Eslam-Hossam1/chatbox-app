@@ -4,7 +4,6 @@ import 'package:go_router/go_router.dart';
 import '../../../../../../core/theme/app_text_styles.dart';
 import '../../../../../../core/theme/theme_colors_extension.dart';
 import '../../../../../../core/widgets/buttons/clickable_text.dart';
-import '../../../../../../core/routing/routing_helper.dart';
 import 'package:flutter/material.dart';
 
 class DontHaveAnEmail extends StatelessWidget {
