@@ -10,12 +10,12 @@ class LoginCubit extends Cubit<LoginState> {
   final LoginUsecase _loginUseCase;
   final SecureStorageService _secureStorageService;
 
-  LoginCubit({
-    required LoginUsecase loginUseCase,
-    required SecureStorageService secureStorageService
-  }) : _loginUseCase = loginUseCase,
-       _secureStorageService = secureStorageService,
-       super(const LoginInitial());
+  LoginCubit(
+      {required LoginUsecase loginUseCase,
+      required SecureStorageService secureStorageService})
+      : _loginUseCase = loginUseCase,
+        _secureStorageService = secureStorageService,
+        super(const LoginInitial());
 
   String email = '';
   String password = '';

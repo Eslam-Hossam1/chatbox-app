@@ -15,7 +15,8 @@ class LoginData {
     required this.token,
   });
 
-  factory LoginData.fromJson(Map<String, dynamic> json) => _$LoginDataFromJson(json);
+  factory LoginData.fromJson(Map<String, dynamic> json) =>
+      _$LoginDataFromJson(json);
 
   Map<String, dynamic> toJson() => _$LoginDataToJson(this);
 

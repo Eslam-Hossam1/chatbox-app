@@ -1,7 +1,7 @@
-
 import 'package:jwt_decoder/jwt_decoder.dart';
 
 import 'jwt_decoder_service.dart';
+
 class JwtDecoderServiceImpl implements JwtDecoderService {
   const JwtDecoderServiceImpl();
   @override

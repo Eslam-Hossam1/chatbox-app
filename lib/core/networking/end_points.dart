@@ -9,4 +9,4 @@ abstract class EndPoints {
   static const String sendSignUpOtp = _sendOtp;
   static const String sendForgotPassowrdOtp = _sendOtp;
   static const String _sendOtp = "/api/send-otp";
-} 
+}

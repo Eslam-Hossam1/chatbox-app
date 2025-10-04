@@ -4,5 +4,6 @@ import '../../../../../core/errors/api_failure.dart';
 import 'package:dartz/dartz.dart';
 
 abstract interface class ForgotPasswordRepo {
-  Future<Either<ApiFailure, void>> forgotPassword({required ForgotPasswordParams forgotPasswordParams});
+  Future<Either<ApiFailure, void>> forgotPassword(
+      {required ForgotPasswordParams forgotPasswordParams});
 }

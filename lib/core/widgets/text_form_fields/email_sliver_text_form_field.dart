@@ -16,7 +16,7 @@ class EmailSliverTextFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverAuthTextFormField(
       title: 'Email',
-      hint:hint?? 'Email, e.g. example@gmail.com',
+      hint: hint ?? 'Email, e.g. example@gmail.com',
       onSaved: onSaved,
       validator: FormValidators.emailTextFormFieldValidator,
     );

@@ -10,7 +10,8 @@ import 'package:dio/dio.dart';
 class ForgotPasswordRepoImpl implements ForgotPasswordRepo {
   final ForgotPasswordRemoteDataSource _forgotPasswordRemoteDataSource;
 
-  ForgotPasswordRepoImpl({required ForgotPasswordRemoteDataSource forgotPasswordRemoteDataSource})
+  ForgotPasswordRepoImpl(
+      {required ForgotPasswordRemoteDataSource forgotPasswordRemoteDataSource})
       : _forgotPasswordRemoteDataSource = forgotPasswordRemoteDataSource;
 
   @override
@@ -18,7 +19,8 @@ class ForgotPasswordRepoImpl implements ForgotPasswordRepo {
       {required ForgotPasswordParams forgotPasswordParams}) async {
     try {
       await _forgotPasswordRemoteDataSource.forgotPassword(
-        forgotPasswordRequestBody: ForgotPasswordRequestBody.fromParams(forgotPasswordParams),
+        forgotPasswordRequestBody:
+            ForgotPasswordRequestBody.fromParams(forgotPasswordParams),
       );
       return Right(null);
     } catch (e) {
