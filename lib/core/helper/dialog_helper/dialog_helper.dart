@@ -1,5 +1,5 @@
 import 'package:awesome_dialog/awesome_dialog.dart';
-import 'package:chatbox_app/core/helper/dialog_helper/get_custom_awesome_dialog.dart';
+import 'get_custom_awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

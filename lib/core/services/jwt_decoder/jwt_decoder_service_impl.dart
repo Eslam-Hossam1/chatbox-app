@@ -1,5 +1,5 @@
 
-import 'package:chatbox_app/core/services/jwt_decoder/jwt_decoder_service.dart';
+import 'jwt_decoder_service.dart';
 import 'package:jwt_decoder/jwt_decoder.dart';
 class JwtDecoderServiceImpl implements JwtDecoderService {
   const JwtDecoderServiceImpl();

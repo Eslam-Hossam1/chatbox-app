@@ -1,7 +1,7 @@
-import 'package:chatbox_app/core/services/jwt_decoder/jwt_decoder_service.dart';
-import 'package:chatbox_app/core/services/storage_services/secure_storage/secure_storage_service.dart';
-import 'package:chatbox_app/core/services/storage_services/secure_storage/secure_storage_keys.dart';
-import 'package:chatbox_app/core/Functions/remove_bearer.dart';
+import '../jwt_decoder/jwt_decoder_service.dart';
+import '../storage_services/secure_storage/secure_storage_service.dart';
+import '../storage_services/secure_storage/secure_storage_keys.dart';
+import '../../Functions/remove_bearer.dart';
 
 class AuthCredentialsManager {
   final SecureStorageService secureStorageService;

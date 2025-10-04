@@ -1,4 +1,4 @@
-import 'package:chatbox_app/core/utils/app_regex.dart';
+import 'app_regex.dart';
 
 abstract class FormValidators {
   static const String thisFieldRequired = 'This field required';

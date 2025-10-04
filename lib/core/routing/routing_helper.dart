@@ -1,5 +1,5 @@
-import 'package:chatbox_app/core/routing/routes_paths.dart';
-import 'package:chatbox_app/features/otp/domain/entities/otp_reason.dart';
+import 'routes_paths.dart';
+import '../../features/otp/domain/entities/otp_reason.dart';
 import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
 

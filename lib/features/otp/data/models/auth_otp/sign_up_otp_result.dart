@@ -1,5 +1,5 @@
-import 'package:chatbox_app/core/networking/api_keys.dart';
-import 'package:chatbox_app/features/otp/domain/entities/otp_result.dart';
+import '../../../../../core/networking/api_keys.dart';
+import '../../../domain/entities/otp_result.dart';
 
 class SignUpOtpResult implements OtpResult {
   final String accessToken;

@@ -1,6 +1,6 @@
-import 'package:chatbox_app/features/otp/domain/entities/otp_reason.dart';
-import 'package:chatbox_app/features/otp/domain/usecases/send_otp_usecase.dart';
-import 'package:chatbox_app/features/otp/domain/usecases/verify_otp_usecase.dart';
+import '../../../domain/entities/otp_reason.dart';
+import '../../../domain/usecases/send_otp_usecase.dart';
+import '../../../domain/usecases/verify_otp_usecase.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'otp_state.dart';

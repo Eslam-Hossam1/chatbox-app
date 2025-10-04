@@ -1,5 +1,5 @@
-import 'package:chatbox_app/core/widgets/buttons/custom_text_button.dart';
-import 'package:chatbox_app/features/sign_up/presentation/manager/sign_up_cubit/sign_up_cubit.dart';
+import '../../../../../../../core/widgets/buttons/custom_text_button.dart';
+import '../../../../manager/sign_up_cubit/sign_up_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,5 +1,5 @@
-import 'package:chatbox_app/core/services/storage_services/preferences/preferences_keys.dart';
-import 'package:chatbox_app/core/services/storage_services/preferences/preferences_service.dart';
+import 'storage_services/preferences/preferences_keys.dart';
+import 'storage_services/preferences/preferences_service.dart';
 
 class OnboardingPreferncesService {
   final PreferencesService _preferencesService;

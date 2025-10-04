@@ -1,4 +1,4 @@
-import 'package:chatbox_app/core/theme/app_text_styles.dart';
+import '../../theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

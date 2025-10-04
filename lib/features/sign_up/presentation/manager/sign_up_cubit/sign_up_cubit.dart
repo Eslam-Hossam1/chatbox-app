@@ -1,5 +1,5 @@
-import 'package:chatbox_app/features/sign_up/domain/params/sign_up_params.dart';
-import 'package:chatbox_app/features/sign_up/domain/usecases/sign_up_usecase.dart';
+import '../../../domain/params/sign_up_params.dart';
+import '../../../domain/usecases/sign_up_usecase.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'sign_up_state.dart';

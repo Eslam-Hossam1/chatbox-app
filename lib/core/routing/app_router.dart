@@ -1,8 +1,8 @@
-import 'package:chatbox_app/core/di/service_locator.dart';
-import 'package:chatbox_app/core/routing/app_routes/all_routs.dart';
-import 'package:chatbox_app/core/routing/router_redirect.dart';
-import 'package:chatbox_app/core/routing/routes_paths.dart';
-import 'package:chatbox_app/core/services/onboarding_perferences_service.dart';
+import '../di/service_locator.dart';
+import 'app_routes/all_routs.dart';
+import 'router_redirect.dart';
+import 'routes_paths.dart';
+import '../services/onboarding_perferences_service.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

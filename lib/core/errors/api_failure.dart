@@ -1,4 +1,4 @@
-import 'package:chatbox_app/core/errors/failures.dart';
+import 'failures.dart';
 
 abstract class ApiFailure extends Failure {
   const ApiFailure(

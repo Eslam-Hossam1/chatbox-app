@@ -1,7 +1,7 @@
-import 'package:chatbox_app/core/widgets/sliver_sticky_footer.dart';
-import 'package:chatbox_app/core/widgets/spacing/height_space.dart';
-import 'package:chatbox_app/features/sign_up/presentation/view/widgets/sign_up_bottom_section/already_have_an_account.dart';
-import 'package:chatbox_app/features/sign_up/presentation/view/widgets/sign_up_bottom_section/sign_up_button/sign_up_button_builder.dart';
+import '../../../../../../core/widgets/sliver_sticky_footer.dart';
+import '../../../../../../core/widgets/spacing/height_space.dart';
+import 'already_have_an_account.dart';
+import 'sign_up_button/sign_up_button_builder.dart';
 import 'package:flutter/material.dart';
 
 class SignUpButtonAndAlreadyHaveAccountSection extends StatelessWidget {
