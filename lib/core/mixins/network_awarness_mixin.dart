@@ -1,10 +1,11 @@
 import 'dart:developer';
 
+import 'package:flutter/material.dart';
+
 import '../di/service_locator.dart';
 import '../networking/network_connection_checker/network_connection_checker.dart';
 import '../networking/network_connection_checker/network_connection_checker_impl.dart';
 import '../theme/app_text_styles.dart';
-import 'package:flutter/material.dart';
 
 /// A mixin to handle internet connectivity changes and show snack bars accordingly.
 /// Can be reused in any StatefulWidget that needs network awareness.

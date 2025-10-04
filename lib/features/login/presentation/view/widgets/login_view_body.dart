@@ -1,0 +1,49 @@
+import 'login_button_and_dont_have_an_email_section.dart';
+import 'login_header.dart';
+import 'login_text_form_fields_section.dart';
+
+import '../../../../../core/widgets/app_padding.dart';
+import '../../../../../core/widgets/spacing/sliver_height_space.dart';
+import 'package:flutter/material.dart';
+
+class LoginViewBody extends StatefulWidget {
+  const LoginViewBody({super.key});
+
+  @override
+  State<LoginViewBody> createState() => _LoginViewBodyState();
+}
+
+class _LoginViewBodyState extends State<LoginViewBody> {
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
+  _enableAutoValidation() {
+    setState(() {
+      autovalidateMode = AutovalidateMode.always;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Form(
+      key: _formKey,
+      autovalidateMode: autovalidateMode,
+      child: AppPadding(
+        child: CustomScrollView(
+          slivers: [
+            SliverHeightSpace(
+              height: 40,
+            ),
+            LoginHeader(),
+            SliverHeightSpace(height: 60),
+            LoginTextFormFieldsSection(),
+            SliverHeightSpace(height: 40),
+            LoginButtonAndDontHaveAnEmailSection(
+              formKey: _formKey,
+              enableAutoValidation: _enableAutoValidation,
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}

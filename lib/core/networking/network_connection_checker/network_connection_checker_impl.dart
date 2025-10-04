@@ -1,6 +1,8 @@
 import 'dart:async';
-import 'network_connection_checker.dart';
+
 import 'package:connectivity_plus/connectivity_plus.dart';
+
+import 'network_connection_checker.dart';
 
 /// Implementation of [NetworkConnectionChecker].
 ///
