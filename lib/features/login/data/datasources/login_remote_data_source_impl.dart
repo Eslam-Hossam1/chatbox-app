@@ -11,7 +11,8 @@ class LoginRemoteDataSourceImpl implements LoginRemoteDataSource {
       : _apiConsumer = apiConsumer;
 
   @override
-  Future<LoginResponse> login({required LoginRequestBody loginRequestBody}) async {
+  Future<LoginResponse> login(
+      {required LoginRequestBody loginRequestBody}) async {
     final response = await _apiConsumer.post(
       EndPoints.login,
       data: loginRequestBody.toJson(),

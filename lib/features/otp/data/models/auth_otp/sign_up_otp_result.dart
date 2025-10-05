@@ -12,7 +12,7 @@ class SignUpOtpResult implements OtpResult {
   factory SignUpOtpResult.fromJson(Map<String, dynamic> json) {
     return SignUpOtpResult(
       accessToken: json[ApiKeys.data][ApiKeys.accessToken],
-  //    refreshToken: json[ApiKeys.data][ApiKeys.refreshToken],
+      //    refreshToken: json[ApiKeys.data][ApiKeys.refreshToken],
     );
   }
 }

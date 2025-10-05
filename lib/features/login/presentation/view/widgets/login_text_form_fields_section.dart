@@ -2,6 +2,7 @@ import '../../../../../core/widgets/spacing/sliver_height_space.dart';
 import '../../../../../core/widgets/text_form_fields/email_sliver_text_form_field.dart';
 import '../../../../../core/widgets/text_form_fields/password_sliver_text_form_field.dart';
 import '../../manager/login_cubit/login_cubit.dart';
+import 'forgot_password_clickable_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -24,6 +25,8 @@ class LoginTextFormFieldsSection extends StatelessWidget {
           onSaved: (value) => loginCubit.password = value!,
           hint: 'Enter your password',
         ),
+        SliverHeightSpace(height: 10),
+        ForgotPasswordClickableText(),
       ],
     );
   }

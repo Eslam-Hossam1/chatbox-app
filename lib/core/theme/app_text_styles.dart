@@ -457,8 +457,10 @@ abstract class AppTextStyles {
   }) {
     double scaleFactor = _getScaleFactor(context);
     double responsizeTextFontSize = scaleFactor * baseFontSize;
-    double lowerLimit = baseFontSize * (lowerLimitRatio ?? defaultLowerLimitRatio);
-    double upperLimit = baseFontSize * (upperLimitRatio ?? defaultUpperLimitRatio);
+    double lowerLimit =
+        baseFontSize * (lowerLimitRatio ?? defaultLowerLimitRatio);
+    double upperLimit =
+        baseFontSize * (upperLimitRatio ?? defaultUpperLimitRatio);
 
     return responsizeTextFontSize.clamp(lowerLimit, upperLimit);
   }
