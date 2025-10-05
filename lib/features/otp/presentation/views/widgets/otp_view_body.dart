@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 import '../../../../../core/widgets/app_padding.dart';
 import '../../../../../core/widgets/sliver_sticky_footer.dart';
 import '../../../../../core/widgets/spacing/height_space.dart';
@@ -5,7 +7,6 @@ import '../../../../../core/widgets/spacing/sliver_height_space.dart';
 import 'enter_otp_section.dart';
 import 'resend_code/resend_button_builder.dart';
 import 'verify_button.dart';
-import 'package:flutter/material.dart';
 
 class OtpViewBody extends StatefulWidget {
   const OtpViewBody({super.key});

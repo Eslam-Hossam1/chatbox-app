@@ -1,11 +1,12 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../../core/widgets/spacing/sliver_height_space.dart';
 import '../../../../../core/widgets/text_form_fields/display_name_sliver_text_form_field.dart';
 import '../../../../../core/widgets/text_form_fields/email_sliver_text_form_field.dart';
 import '../../../../../core/widgets/text_form_fields/password_sliver_text_form_field.dart';
 import '../../../../../core/widgets/text_form_fields/username_sliver_text_form_field.dart';
 import '../../manager/sign_up_cubit/sign_up_cubit.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SignUpTextFormFieldsSection extends StatelessWidget {
   const SignUpTextFormFieldsSection({

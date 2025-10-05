@@ -1,10 +1,11 @@
-import '../../theme/theme_colors_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:pin_code_fields/pin_code_fields.dart';
+
 import '../../theme/app_text_styles.dart';
+import '../../theme/theme_colors_extension.dart';
 import '../../utils/form_validators.dart';
 import '../../utils/size_config.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
 
 class CustomPinCodeField extends StatelessWidget {
   const CustomPinCodeField(

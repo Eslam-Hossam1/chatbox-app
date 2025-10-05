@@ -1,3 +1,5 @@
+import '../../../domain/entities/otp_to_go_on_success.dart';
+
 import '../../../../../core/services/auth_credentials_manager/auth_credentials_manager.dart';
 import '../../../../../core/di/service_locator.dart';
 import '../../../../../core/networking/end_points.dart';
@@ -20,7 +22,9 @@ class SignUpOtpReason implements OtpReason<SignUpOtpResult> {
   final String verifyOtpEndpoint = EndPoints.verifySignUpOtp;
 
   @override
-  final String toGoViewPath = RoutePaths.home;
+  final OtpToGoOnSuccess toGoOnSuccess = OtpToGoOnSuccess(
+    toGoRoutePath: RoutePaths.home,
+  );
 
   @override
   final bool sendOtpOnOpening = true;

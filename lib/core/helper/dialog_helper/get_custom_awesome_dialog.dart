@@ -1,8 +1,9 @@
 import 'package:awesome_dialog/awesome_dialog.dart';
+import 'package:flutter/material.dart';
+
 import '../../theme/app_text_styles.dart';
 import '../../theme/theme_colors_extension.dart';
 import '../../utils/size_config.dart';
-import 'package:flutter/material.dart';
 
 AwesomeDialog getCustomAwesomeDialog(BuildContext context,
     {required DialogType dialogType,

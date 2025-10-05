@@ -1,3 +1,5 @@
+import '../../../domain/entities/otp_to_go_on_success.dart';
+
 import '../../../../../core/services/auth_credentials_manager/auth_credentials_manager.dart';
 import '../../../../../core/di/service_locator.dart';
 import '../../../../../core/networking/end_points.dart';
@@ -8,8 +10,10 @@ import '../../../domain/entities/otp_reason.dart';
 class ForgotPasswordOtpReason implements OtpReason<ForgotPasswordOtpResult> {
   ForgotPasswordOtpReason({
     required this.email,
-  });
-
+  }) : toGoOnSuccess = OtpToGoOnSuccess(
+          toGoRoutePath: RoutePaths.resetPassword,
+          toGoExtra: email,
+        );
   @override
   final String email;
 
@@ -20,8 +24,7 @@ class ForgotPasswordOtpReason implements OtpReason<ForgotPasswordOtpResult> {
   final String verifyOtpEndpoint = EndPoints.verifyForgotPasswordOtp;
 
   @override
-  final String toGoViewPath =
-      RoutePaths.resetPassword; // Navigate to reset password after OTP
+  final OtpToGoOnSuccess toGoOnSuccess;
 
   @override
   final bool sendOtpOnOpening = false;

@@ -1,4 +1,4 @@
-import 'package:chatbox_app/core/services/storage_services/secure_storage/secure_storage_service.dart';
+import '../../services/storage_services/secure_storage/secure_storage_service.dart';
 
 import '../../networking/dio_consumer.dart';
 import '../routes_paths.dart';

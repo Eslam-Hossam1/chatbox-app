@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
+
 import '../../../../core/helper/dialog_helper/dialog_helper.dart';
 import '../manager/otp_cubit/otp_cubit.dart';
 import 'widgets/otp_view_body.dart';
@@ -25,6 +26,7 @@ class _OtpViewState extends State<OtpView> {
   @override
   Widget build(BuildContext context) {
     final otpCubit = context.read<OtpCubit>();
+    final otpToGoOnSuccess = otpCubit.otpReason.toGoOnSuccess;
     return BlocConsumer<OtpCubit, OtpState>(
       listener: (context, state) {
         if (state is OtpFailure) {
@@ -35,7 +37,10 @@ class _OtpViewState extends State<OtpView> {
           );
           otpCubit.showResendButton();
         } else if (state is VerifyOtpSuccess) {
-          context.go(otpCubit.otpReason.toGoViewPath);
+          context.go(
+            otpToGoOnSuccess.toGoRoutePath,
+            extra: otpToGoOnSuccess.toGoExtra,
+          );
         }
       },
       builder: (context, state) {

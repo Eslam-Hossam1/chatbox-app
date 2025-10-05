@@ -1,10 +1,10 @@
-import '../../manager/login_cubit/login_cubit.dart';
-import '../../manager/login_cubit/login_state.dart';
-
-import '../../../../../../../core/widgets/buttons/custom_loading_button.dart';
-import 'login_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../../../../core/widgets/buttons/custom_loading_button.dart';
+import '../../manager/login_cubit/login_cubit.dart';
+import '../../manager/login_cubit/login_state.dart';
+import 'login_button.dart';
 
 class LoginButtonSection extends StatelessWidget {
   const LoginButtonSection({
