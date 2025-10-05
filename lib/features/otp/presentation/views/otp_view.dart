@@ -25,6 +25,7 @@ class _OtpViewState extends State<OtpView> {
   @override
   Widget build(BuildContext context) {
     final otpCubit = context.read<OtpCubit>();
+    final otpToGoOnSuccess = otpCubit.otpReason.toGoOnSuccess;
     return BlocConsumer<OtpCubit, OtpState>(
       listener: (context, state) {
         if (state is OtpFailure) {
@@ -35,7 +36,10 @@ class _OtpViewState extends State<OtpView> {
           );
           otpCubit.showResendButton();
         } else if (state is VerifyOtpSuccess) {
-          context.go(otpCubit.otpReason.toGoViewPath);
+          context.go(
+            otpToGoOnSuccess.toGoRoutePath,
+            extra: otpToGoOnSuccess.toGoExtra,
+          );
         }
       },
       builder: (context, state) {
