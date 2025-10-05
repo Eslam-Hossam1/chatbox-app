@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class ResendButtonPlaceholder extends StatelessWidget {
   final String timerText;
-  
+
   const ResendButtonPlaceholder({
     super.key,
     this.timerText = '15s', // Default static text
@@ -15,7 +15,7 @@ class ResendButtonPlaceholder extends StatelessWidget {
     final textStyle = AppTextStyles.medium14(context).copyWith(
       color: context.secondaryTextColor,
     );
-    
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [

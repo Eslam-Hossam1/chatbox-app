@@ -3,6 +3,7 @@ import '../../../../../../core/theme/theme_colors_extension.dart';
 import '../../../manager/otp_cubit/otp_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 class ResendCodeActiveButton extends StatelessWidget {
   const ResendCodeActiveButton({super.key});
 
