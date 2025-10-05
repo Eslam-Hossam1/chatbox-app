@@ -14,7 +14,7 @@ class ResendButtonBuilder extends StatelessWidget {
       buildWhen: (previous, current) =>
           current is OtpInitial ||
           current is OtpShowResendButton ||
-          current is ReSendOtpSuccess,
+          current is SendOtpSuccess,
       builder: (context, state) {
         if (state is OtpInitial) {
           return ResendButtonPlaceholder();

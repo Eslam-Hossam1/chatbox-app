@@ -25,6 +25,6 @@ class VerifyOtpSuccess extends OtpState {
   const VerifyOtpSuccess();
 }
 
-class ReSendOtpSuccess extends OtpState {
-  const ReSendOtpSuccess();
+class SendOtpSuccess extends OtpState {
+  const SendOtpSuccess();
 }

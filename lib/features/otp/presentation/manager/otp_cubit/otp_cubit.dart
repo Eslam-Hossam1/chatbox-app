@@ -32,13 +32,13 @@ class OtpCubit extends Cubit<OtpState> {
         ),
       ),
       (success) => emit(
-        ReSendOtpSuccess(),
+        SendOtpSuccess(),
       ),
     );
   }
 
   void showResendButton() => emit(OtpShowResendButton());
-
+  void showSendOtpSuccess() => emit(SendOtpSuccess());
   Future<void> verfiyVerificationCode() async {
     emit(OtpLoading());
     var otpResult = await _verifyOtpUsecase.call(

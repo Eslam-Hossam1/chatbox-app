@@ -15,17 +15,22 @@ class OtpView extends StatefulWidget {
 }
 
 class _OtpViewState extends State<OtpView> {
+  late OtpCubit otpCubit;
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      context.read<OtpCubit>().sendVerificationCode();
+      otpCubit = context.read<OtpCubit>();
+      if (otpCubit.otpReason.sendOtpOnOpening) {
+        otpCubit.sendVerificationCode();
+      } else {
+        otpCubit.showResendButton();
+      }
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    final otpCubit = context.read<OtpCubit>();
     final otpToGoOnSuccess = otpCubit.otpReason.toGoOnSuccess;
     return BlocConsumer<OtpCubit, OtpState>(
       listener: (context, state) {
