@@ -1,6 +1,7 @@
-import 'theme_colors_extension.dart';
-import '../utils/size_config.dart';
 import 'package:flutter/widgets.dart';
+
+import '../utils/size_config.dart';
+import 'theme_colors_extension.dart';
 
 abstract class AppTextStyles {
   // Font size 68

@@ -1,5 +1,5 @@
-import 'package:chatbox_app/core/widgets/text_form_fields/password_sliver_text_form_field.dart';
-import 'package:chatbox_app/features/reset_password/presentation/manager/reset_password_cubit/reset_password_cubit.dart';
+import '../../../../../core/widgets/text_form_fields/password_sliver_text_form_field.dart';
+import '../../manager/reset_password_cubit/reset_password_cubit.dart';
 
 import '../../../../../core/widgets/app_padding.dart';
 import '../../../../../core/widgets/spacing/sliver_height_space.dart';

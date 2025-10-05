@@ -1,4 +1,4 @@
-import 'package:chatbox_app/features/otp/domain/entities/otp_to_go_on_success.dart';
+import 'otp_to_go_on_success.dart';
 
 import 'otp_result.dart';
 

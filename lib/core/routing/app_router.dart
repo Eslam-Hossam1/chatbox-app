@@ -1,10 +1,11 @@
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
 import '../di/service_locator.dart';
+import '../services/onboarding_perferences_service.dart';
 import 'app_routes/all_routs.dart';
 import 'router_redirect.dart';
 import 'routes_paths.dart';
-import '../services/onboarding_perferences_service.dart';
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class AppRouter {
   static final rootNavigatorKey = GlobalKey<NavigatorState>();

@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import 'login_data.dart';
 import '../../domain/entities/login_entity.dart';
+import 'login_data.dart';
 
 part 'login_response.g.dart';
 

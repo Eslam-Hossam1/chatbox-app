@@ -1,4 +1,4 @@
-import 'package:chatbox_app/features/otp/domain/entities/otp_to_go_on_success.dart';
+import '../../../domain/entities/otp_to_go_on_success.dart';
 
 import '../../../../../core/services/auth_credentials_manager/auth_credentials_manager.dart';
 import '../../../../../core/di/service_locator.dart';

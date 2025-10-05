@@ -1,4 +1,4 @@
-import 'package:chatbox_app/features/reset_password/domain/params/reset_password_params.dart';
+import '../params/reset_password_params.dart';
 
 import '../../../../../core/errors/api_failure.dart';
 import 'package:dartz/dartz.dart';

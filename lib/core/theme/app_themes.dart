@@ -1,7 +1,8 @@
-import 'app_colors.dart';
-import 'custom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'app_colors.dart';
+import 'custom_colors.dart';
 
 abstract class AppThemes {
   static final ThemeData lightTheme = ThemeData(

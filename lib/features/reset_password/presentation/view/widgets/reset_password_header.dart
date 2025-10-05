@@ -11,8 +11,7 @@ class ResetPasswordHeader extends StatelessWidget {
     return SliverToBoxAdapter(
       child: SliverAuthHeaderText(
         title: 'Reset Password',
-        subtitle:
-            'Enter your new password',
+        subtitle: 'Enter your new password',
       ),
     );
   }

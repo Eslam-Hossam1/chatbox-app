@@ -1,8 +1,9 @@
 import 'dart:developer';
 
+import 'package:dio/dio.dart';
+
 import 'api_error_model/api_error_model.dart';
 import 'api_failure.dart';
-import 'package:dio/dio.dart';
 
 class DioApiFailure extends ApiFailure {
   DioApiFailure(

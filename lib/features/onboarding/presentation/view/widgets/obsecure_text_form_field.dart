@@ -1,8 +1,9 @@
+import 'package:flutter/material.dart';
+
 import '../../../../../core/theme/app_text_styles.dart';
 import '../../../../../core/theme/theme_colors_extension.dart';
 import '../../../../../core/widgets/closed_eye_icon.dart';
 import '../../../../../core/widgets/opened_eye_svg.dart';
-import 'package:flutter/material.dart';
 
 class ObsecureTextFormField extends StatefulWidget {
   const ObsecureTextFormField({
