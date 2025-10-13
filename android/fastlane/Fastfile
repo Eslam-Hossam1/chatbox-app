@@ -1,0 +1,28 @@
+
+default_platform(:android)
+
+platform :android do
+  desc "Lane for Android Firebase App Distribution"
+  lane :firebase_distribution do
+    sh "flutter clean"
+    sh "flutter build apk"
+    firebase_app_distribution(
+        app: "1:1030811098895:android:168931cc04084a6fc8687a",
+        firebase_cli_token: ENV['FIREBASE_CLI_TOKEN'],
+        android_artifact_type: "APK",
+        android_artifact_path: "../build/app/outputs/flutter-apk/app-release.apk",
+        testers: "ahmedapdo2016@gmail.com, eslamhossam.tech@gmail.com",
+        release_notes: <<~EOF
+        🚀 ChatBox v1.0.1 Release
+    
+        ✨ What's New:
+        - Native splash configured 
+        - Onboarding implemented
+        - Authentication (login & signup & forgot password ) implemented
+        - OTP verification implemented
+    
+        📅 Release Date: #{Time.now.strftime("%d %b %Y")}
+      EOF
+    )
+  end
+end
