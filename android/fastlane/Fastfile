@@ -11,8 +11,18 @@ platform :android do
         firebase_cli_token: ENV['FIREBASE_CLI_TOKEN'],
         android_artifact_type: "APK",
         android_artifact_path: "../build/app/outputs/flutter-apk/app-release.apk",
-        testers: "eslamhossam.tech@gmail.com",
-        release_notes: "First Fastlane Firebase Distribution"
-  )
+        testers: "eslamhossam.tech@gmail.com","ahmedapdo2016@gmail.com",
+        release_notes: <<~EOF
+        🚀 ChatBox v1.0.1 Release
+    
+        ✨ What's New:
+        - Native splash configured 
+        - Onboarding implemented
+        - Authentication (login & signup & forgot password ) implemented
+        - OTP verification implemented
+    
+        📅 Release Date: #{Time.now.strftime("%d %b %Y")}
+      EOF
+    )
   end
 end
