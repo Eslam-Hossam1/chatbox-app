@@ -11,7 +11,7 @@ platform :android do
         firebase_cli_token: ENV['FIREBASE_CLI_TOKEN'],
         android_artifact_type: "APK",
         android_artifact_path: "../build/app/outputs/flutter-apk/app-release.apk",
-        testers: "eslamhossam.tech@gmail.com","ahmedapdo2016@gmail.com",
+        testers: "ahmedapdo2016@gmail.com, eslamhossam.tech@gmail.com",
         release_notes: <<~EOF
         🚀 ChatBox v1.0.1 Release
     
