@@ -16,7 +16,7 @@ class AppRouter {
   );
 
   static final router = GoRouter(
-    initialLocation: RoutePaths.initialRoute,
+    initialLocation: RoutePaths.chatRooms,
     navigatorKey: rootNavigatorKey,
     debugLogDiagnostics: true,
     redirect: routerRedirect.redirect,
