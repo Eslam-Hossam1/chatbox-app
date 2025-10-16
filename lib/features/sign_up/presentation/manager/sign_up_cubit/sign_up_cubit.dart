@@ -1,7 +1,7 @@
-import '../../../domain/params/sign_up_params.dart';
-import '../../../domain/usecases/sign_up_usecase.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../domain/params/sign_up_params.dart';
+import '../../../domain/usecases/sign_up_usecase.dart';
 import 'sign_up_state.dart';
 
 class SignUpCubit extends Cubit<SignUpState> {

@@ -1,12 +1,12 @@
-import '../../../../../core/widgets/text_form_fields/email_sliver_text_form_field.dart';
-import '../../manager/forgot_password_cubit/forgot_password_cubit.dart';
-import 'forgot_password_button_section.dart';
-import 'forgot_password_header.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../core/widgets/app_padding.dart';
 import '../../../../../core/widgets/spacing/sliver_height_space.dart';
-import 'package:flutter/material.dart';
+import '../../../../../core/widgets/text_form_fields/email_sliver_text_form_field.dart';
+import '../../manager/forgot_password_cubit/forgot_password_cubit.dart';
+import 'forgot_password_button_section.dart';
+import 'forgot_password_header.dart';
 
 class ForgotPasswordViewBody extends StatefulWidget {
   const ForgotPasswordViewBody({super.key});

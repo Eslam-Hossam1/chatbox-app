@@ -1,11 +1,12 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
+
 import '../../../../core/helper/dialog_helper/dialog_helper.dart';
 import '../../../../core/routing/routes_paths.dart';
 import '../manager/reset_password_cubit/reset_password_cubit.dart';
 import '../manager/reset_password_cubit/reset_password_state.dart';
 import 'widgets/reset_password_view_body.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:go_router/go_router.dart';
 
 class ResetPasswordView extends StatelessWidget {
   const ResetPasswordView({super.key});

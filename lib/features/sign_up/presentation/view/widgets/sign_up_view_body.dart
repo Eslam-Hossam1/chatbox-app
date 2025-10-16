@@ -1,9 +1,10 @@
+import 'package:flutter/material.dart';
+
 import '../../../../../core/widgets/app_padding.dart';
 import '../../../../../core/widgets/spacing/sliver_height_space.dart';
 import 'sign_up_bottom_section/sign_up_button_and_already_have_account_section.dart';
 import 'sign_up_header.dart';
 import 'sign_up_text_form_fields_section.dart';
-import 'package:flutter/material.dart';
 
 class SignUpViewBody extends StatefulWidget {
   const SignUpViewBody({super.key});

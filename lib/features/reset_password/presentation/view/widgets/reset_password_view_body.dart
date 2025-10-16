@@ -1,12 +1,12 @@
-import '../../../../../core/widgets/text_form_fields/password_sliver_text_form_field.dart';
-import '../../manager/reset_password_cubit/reset_password_cubit.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../core/widgets/app_padding.dart';
 import '../../../../../core/widgets/spacing/sliver_height_space.dart';
+import '../../../../../core/widgets/text_form_fields/password_sliver_text_form_field.dart';
+import '../../manager/reset_password_cubit/reset_password_cubit.dart';
 import 'reset_password_button_section.dart';
 import 'reset_password_header.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ResetPasswordViewBody extends StatefulWidget {
   const ResetPasswordViewBody({super.key});

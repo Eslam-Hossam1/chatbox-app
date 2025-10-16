@@ -1,8 +1,9 @@
 import 'dart:async';
 
-import '../../../manager/otp_cubit/otp_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../manager/otp_cubit/otp_cubit.dart';
 
 class CountdownTimer extends StatefulWidget {
   final int seconds;

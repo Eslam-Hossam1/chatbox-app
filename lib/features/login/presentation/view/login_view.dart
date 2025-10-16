@@ -1,11 +1,12 @@
-import '../manager/login_cubit/login_cubit.dart';
-import '../manager/login_cubit/login_state.dart';
-import 'widgets/login_view_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import '../../../../core/routing/routes_paths.dart';
+
 import '../../../../core/helper/dialog_helper/dialog_helper.dart';
+import '../../../../core/routing/routes_paths.dart';
+import '../manager/login_cubit/login_cubit.dart';
+import '../manager/login_cubit/login_state.dart';
+import 'widgets/login_view_body.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});

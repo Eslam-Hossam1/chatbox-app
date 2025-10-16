@@ -1,7 +1,8 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../domain/entities/otp_reason.dart';
 import '../../../domain/usecases/send_otp_usecase.dart';
 import '../../../domain/usecases/verify_otp_usecase.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'otp_state.dart';
 

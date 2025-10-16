@@ -1,11 +1,8 @@
-import '../../../domain/entities/otp_to_go_on_success.dart';
-
-import '../../../../../core/services/auth_credentials_manager/auth_credentials_manager.dart';
-import '../../../../../core/di/service_locator.dart';
 import '../../../../../core/networking/end_points.dart';
 import '../../../../../core/routing/routes_paths.dart';
-import 'forgot_password_otp_result.dart';
 import '../../../domain/entities/otp_reason.dart';
+import '../../../domain/entities/otp_to_go_on_success.dart';
+import 'forgot_password_otp_result.dart';
 
 class ForgotPasswordOtpReason implements OtpReason<ForgotPasswordOtpResult> {
   ForgotPasswordOtpReason({
@@ -34,9 +31,5 @@ class ForgotPasswordOtpReason implements OtpReason<ForgotPasswordOtpResult> {
       ForgotPasswordOtpResult.fromJson(json);
 
   @override
-  Future<void> onSuccess(ForgotPasswordOtpResult otpResult) async {
-    await getIt<AuthCredentialsManager>().storeAccessToken(
-      otpResult.accessToken,
-    );
-  }
+  Future<void> onSuccess(ForgotPasswordOtpResult otpResult) async {}
 }

@@ -1,7 +1,8 @@
-import '../../../../../core/widgets/buttons/custom_text_button.dart';
-import '../../manager/otp_cubit/otp_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../../core/widgets/buttons/custom_text_button.dart';
+import '../../manager/otp_cubit/otp_cubit.dart';
 
 class VerifyButton extends StatelessWidget {
   const VerifyButton({

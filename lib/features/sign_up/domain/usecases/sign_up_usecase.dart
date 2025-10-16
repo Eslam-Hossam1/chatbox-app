@@ -1,8 +1,9 @@
+import 'package:dartz/dartz.dart';
+
 import '../../../../core/errors/api_failure.dart';
 import '../../../../core/usecases/usecase.dart';
 import '../params/sign_up_params.dart';
 import '../repos/sign_up_repo.dart';
-import 'package:dartz/dartz.dart';
 
 class SignUpUsecase implements Usecase<ApiFailure, void, SignUpParams> {
   final SignUpRepo _signUpRepo;

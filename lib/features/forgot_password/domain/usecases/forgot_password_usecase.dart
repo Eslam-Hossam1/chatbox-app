@@ -1,8 +1,9 @@
+import 'package:dartz/dartz.dart';
+
 import '../../../../core/errors/api_failure.dart';
 import '../../../../core/usecases/usecase.dart';
 import '../params/forgot_password_params.dart';
 import '../repos/forgot_password_repo.dart';
-import 'package:dartz/dartz.dart';
 
 class ForgotPasswordUsecase
     implements Usecase<ApiFailure, void, ForgotPasswordParams> {

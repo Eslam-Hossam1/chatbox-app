@@ -1,11 +1,12 @@
-import '../../../../core/errors/api_failure.dart';
-import '../../../../core/errors/dio_api_failure.dart';
-import '../datasources/sign_up_remote_data_source.dart';
-import '../models/sign_up_request_body.dart';
-import '../../domain/params/sign_up_params.dart';
-import '../../domain/repos/sign_up_repo.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
+
+import '../../../../core/errors/api_failure.dart';
+import '../../../../core/errors/dio_api_failure.dart';
+import '../../domain/params/sign_up_params.dart';
+import '../../domain/repos/sign_up_repo.dart';
+import '../datasources/sign_up_remote_data_source.dart';
+import '../models/sign_up_request_body.dart';
 
 class SignUpRepoImpl implements SignUpRepo {
   final SignUpRemoteDataSource _signUpRemoteDataSource;
