@@ -1,3 +1,6 @@
+import '../di/service_locator.dart';
+import 'api_interceptor.dart';
+import '../services/auth_credentials_manager/auth_credentials_manager.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
@@ -24,6 +27,12 @@ class DioConsumer extends ApiConsumer {
 
   void _setupInterceptors() {
     if (kDebugMode) {
+      dio.interceptors.add(
+        ApiInterceptor(
+          client: dio,
+          authCredentialsManager: getIt<AuthCredentialsManager>(),
+        ),
+      );
       dio.interceptors.add(
         PrettyDioLogger(
           request: true,
