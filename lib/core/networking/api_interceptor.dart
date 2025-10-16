@@ -1,0 +1,56 @@
+import '../helper/dialog_helper/dialog_helper.dart';
+import 'api_keys.dart';
+import '../routing/app_router.dart';
+import '../routing/routes_paths.dart';
+import '../services/auth_credentials_manager/auth_credentials_manager.dart';
+import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
+import 'package:go_router/go_router.dart';
+
+class ApiInterceptor extends Interceptor {
+  final Dio client;
+  final AuthCredentialsManager authCredentialsManager;
+
+  ApiInterceptor({
+    required this.client,
+    required this.authCredentialsManager,
+  });
+
+  @override
+  void onRequest(
+      RequestOptions options, RequestInterceptorHandler handler) async {
+    final token = authCredentialsManager.accessToken;
+    options.headers[ApiKeys.authorization] = "Bearer $token";
+
+    super.onRequest(options, handler);
+  }
+
+  @override
+  Future<void> onError(
+      DioException err, ErrorInterceptorHandler handler) async {
+    debugPrint(
+        'ERROR[${err.response?.statusCode}] => PATH: ${err.requestOptions.path}');
+
+    final isUnauthorized = err.response?.statusCode == 401;
+    final isUserLoggedIn = authCredentialsManager.userIsAuthenticated();
+
+    if (isUnauthorized && isUserLoggedIn) {
+      _handleEndSession();
+    }
+
+    super.onError(err, handler);
+  }
+
+  void _handleEndSession() {
+    authCredentialsManager.clearTokens();
+
+    final context = AppRouter.rootNavigatorKey.currentState?.context;
+    if (context != null) {
+      DialogHelper.showEndSessionDialog(
+        context,
+        onDismissCallback: (_) => context.go(RoutePaths.login),
+        btnOkOnPress: () => context.go(RoutePaths.login),
+      );
+    }
+  }
+}
