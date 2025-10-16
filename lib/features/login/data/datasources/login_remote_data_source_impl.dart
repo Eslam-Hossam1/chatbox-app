@@ -1,8 +1,8 @@
 import '../../../../core/networking/api_consumer.dart';
 import '../../../../core/networking/end_points.dart';
-import 'login_remote_data_source.dart';
 import '../models/login_request_body.dart';
 import '../models/login_response.dart';
+import 'login_remote_data_source.dart';
 
 class LoginRemoteDataSourceImpl implements LoginRemoteDataSource {
   final ApiConsumer _apiConsumer;

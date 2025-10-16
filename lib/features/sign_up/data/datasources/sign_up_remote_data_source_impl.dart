@@ -1,7 +1,7 @@
 import '../../../../core/networking/api_consumer.dart';
 import '../../../../core/networking/end_points.dart';
-import 'sign_up_remote_data_source.dart';
 import '../models/sign_up_request_body.dart';
+import 'sign_up_remote_data_source.dart';
 
 class SignUpRemoteDataSourceImpl implements SignUpRemoteDataSource {
   final ApiConsumer _apiConsumer;

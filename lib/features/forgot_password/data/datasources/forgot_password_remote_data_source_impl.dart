@@ -1,7 +1,7 @@
 import '../../../../core/networking/api_consumer.dart';
 import '../../../../core/networking/end_points.dart';
-import 'forgot_password_remote_data_source.dart';
 import '../models/forgot_password_request_body.dart';
+import 'forgot_password_remote_data_source.dart';
 
 class ForgotPasswordRemoteDataSourceImpl
     implements ForgotPasswordRemoteDataSource {

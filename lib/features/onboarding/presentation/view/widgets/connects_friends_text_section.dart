@@ -1,5 +1,6 @@
-import '../../../../../core/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../../core/theme/app_text_styles.dart';
 
 class ConnectsFriendsTextSection extends StatelessWidget {
   const ConnectsFriendsTextSection({

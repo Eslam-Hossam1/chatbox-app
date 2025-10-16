@@ -1,8 +1,8 @@
 import '../../../../core/networking/api_consumer.dart';
 import '../../../../core/networking/api_keys.dart';
-import 'otp_remote_data_source.dart';
 import '../../domain/entities/otp_reason.dart';
 import '../../domain/entities/otp_result.dart';
+import 'otp_remote_data_source.dart';
 
 class OtpRemoteDataSourceImpl implements OtpRemoteDataSource {
   final ApiConsumer _apiConsumer;

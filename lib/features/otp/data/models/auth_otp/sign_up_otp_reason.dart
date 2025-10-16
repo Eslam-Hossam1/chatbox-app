@@ -1,11 +1,10 @@
-import '../../../domain/entities/otp_to_go_on_success.dart';
-
-import '../../../../../core/services/auth_credentials_manager/auth_credentials_manager.dart';
 import '../../../../../core/di/service_locator.dart';
 import '../../../../../core/networking/end_points.dart';
 import '../../../../../core/routing/routes_paths.dart';
-import 'sign_up_otp_result.dart';
+import '../../../../../core/services/auth_credentials_manager/auth_credentials_manager.dart';
 import '../../../domain/entities/otp_reason.dart';
+import '../../../domain/entities/otp_to_go_on_success.dart';
+import 'sign_up_otp_result.dart';
 
 class SignUpOtpReason implements OtpReason<SignUpOtpResult> {
   SignUpOtpReason({
@@ -37,7 +36,6 @@ class SignUpOtpReason implements OtpReason<SignUpOtpResult> {
   Future<void> onSuccess(SignUpOtpResult otpResult) async {
     await getIt<AuthCredentialsManager>().storeAccessToken(
       otpResult.accessToken,
-      //  refreshToken: otpResult.refreshToken,
     );
   }
 }

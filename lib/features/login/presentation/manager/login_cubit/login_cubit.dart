@@ -1,20 +1,18 @@
-import '../../../../../core/services/storage_services/secure_storage/secure_storage_keys.dart';
-import '../../../../../core/services/storage_services/secure_storage/secure_storage_service.dart';
+import '../../../../../core/services/auth_credentials_manager/auth_credentials_manager.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../../../domain/params/login_params.dart';
 import '../../../domain/usecases/login_usecase.dart';
 import 'login_state.dart';
 
 class LoginCubit extends Cubit<LoginState> {
   final LoginUsecase _loginUseCase;
-  final SecureStorageService _secureStorageService;
+  final AuthCredentialsManager _authCredentialsManager;
 
   LoginCubit(
       {required LoginUsecase loginUseCase,
-      required SecureStorageService secureStorageService})
+      required AuthCredentialsManager authCredentialsManager})
       : _loginUseCase = loginUseCase,
-        _secureStorageService = secureStorageService,
+        _authCredentialsManager = authCredentialsManager,
         super(const LoginInitial());
 
   String email = '';
@@ -36,9 +34,8 @@ class LoginCubit extends Cubit<LoginState> {
       },
       (loginEntity) async {
         // Store the token
-        await _secureStorageService.setData(
-          key: SecureStorageKeys.accessToken,
-          value: loginEntity.token,
+        await _authCredentialsManager.storeAccessToken(
+          loginEntity.token,
         );
         emit(LoginSuccess());
       },

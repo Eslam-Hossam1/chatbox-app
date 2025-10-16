@@ -1,5 +1,6 @@
-import '../../../../../core/widgets/sliver_auth_header_text.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../../core/widgets/sliver_auth_header_text.dart';
 
 class SignUpHeader extends StatelessWidget {
   const SignUpHeader({

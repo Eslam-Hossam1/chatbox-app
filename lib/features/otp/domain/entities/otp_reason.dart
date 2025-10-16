@@ -1,6 +1,5 @@
-import 'otp_to_go_on_success.dart';
-
 import 'otp_result.dart';
+import 'otp_to_go_on_success.dart';
 
 abstract interface class OtpReason<T extends OtpResult> {
   final String verifyOtpEndpoint;

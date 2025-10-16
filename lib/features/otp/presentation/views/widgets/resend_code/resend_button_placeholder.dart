@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
+
 import '../../../../../../core/theme/app_text_styles.dart';
 import '../../../../../../core/theme/theme_colors_extension.dart';
-import 'package:flutter/material.dart';
 
 class ResendButtonPlaceholder extends StatelessWidget {
   final String timerText;

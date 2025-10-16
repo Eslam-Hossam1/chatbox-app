@@ -1,4 +1,4 @@
-import 'package:chatbox_app/firebase_options.dart';
+import '../../firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';

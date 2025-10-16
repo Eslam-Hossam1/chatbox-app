@@ -1,8 +1,9 @@
+import 'package:dartz/dartz.dart';
+
 import '../../../../core/errors/api_failure.dart';
 import '../../../../core/usecases/usecase.dart';
 import '../entities/otp_reason.dart';
 import '../repos/otp_repo.dart';
-import 'package:dartz/dartz.dart';
 
 class SendOtpUsecase implements Usecase<ApiFailure, void, SendOtpParams> {
   final OtpRepo _otpRepo;

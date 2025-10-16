@@ -1,9 +1,10 @@
+import 'package:dartz/dartz.dart';
+
 import '../../../../core/errors/api_failure.dart';
 import '../../../../core/usecases/usecase.dart';
 import '../entities/otp_reason.dart';
 import '../entities/otp_result.dart';
 import '../repos/otp_repo.dart';
-import 'package:dartz/dartz.dart';
 
 class VerifyOtpUsecase
     implements Usecase<ApiFailure, OtpResult, VerifyOtpParams> {
