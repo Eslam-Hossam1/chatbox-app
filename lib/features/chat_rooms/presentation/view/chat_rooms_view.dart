@@ -1,4 +1,4 @@
-import 'package:chatbox_app/features/chat_rooms/presentation/view/chat_rooms_view_body.dart';
+import 'chat_rooms_view_body.dart';
 import 'package:flutter/material.dart';
 
 class ChatRoomsView extends StatelessWidget {

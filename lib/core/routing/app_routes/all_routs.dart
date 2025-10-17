@@ -1,4 +1,4 @@
-import 'package:chatbox_app/core/routing/app_routes/chat_rooms_route.dart';
+import 'chat_rooms_route.dart';
 import 'package:go_router/go_router.dart';
 
 import 'auth_routes.dart';
