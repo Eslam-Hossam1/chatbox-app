@@ -23,7 +23,7 @@ class ResetPasswordRepoImpl implements ResetPasswordRepo {
         resetPasswordRequestBody:
             ResetPasswordRequestBody.fromParams(resetPasswordParams),
       );
-      return Right(null);
+      return const Right(null);
     } catch (e) {
       if (e is DioException) {
         return Left(DioApiFailure.fromDioException(e));

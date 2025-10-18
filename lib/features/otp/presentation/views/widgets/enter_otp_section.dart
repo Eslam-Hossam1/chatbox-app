@@ -21,7 +21,7 @@ class EnterOtpSection extends StatelessWidget {
             'Check your email',
             style: AppTextStyles.bold22(context),
           ),
-          HeightSpace(
+          const HeightSpace(
             height: 20,
           ),
           Text(
@@ -46,7 +46,7 @@ class EnterOtpSection extends StatelessWidget {
               )
             ]),
           ),
-          HeightSpace(height: 32),
+          const HeightSpace(height: 32),
           CustomPinCodeField(
             onSaved: (pinCode) {
               otpCubit.pinCode = pinCode!;

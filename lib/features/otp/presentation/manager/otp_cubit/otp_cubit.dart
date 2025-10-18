@@ -17,10 +17,10 @@ class OtpCubit extends Cubit<OtpState> {
     required this.otpReason,
   })  : _sendOtpUsecase = sendOtpUsecase,
         _verifyOtpUsecase = verifyOtpUsecase,
-        super(OtpInitial());
+        super(const OtpInitial());
 
   Future<void> sendVerificationCode() async {
-    emit(OtpLoading());
+    emit(const OtpLoading());
     var otpResult = await _sendOtpUsecase.call(
       SendOtpParams(
         otpReason: otpReason,
@@ -33,15 +33,15 @@ class OtpCubit extends Cubit<OtpState> {
         ),
       ),
       (success) => emit(
-        SendOtpSuccess(),
+        const SendOtpSuccess(),
       ),
     );
   }
 
-  void showResendButton() => emit(OtpShowResendButton());
-  void showSendOtpSuccess() => emit(SendOtpSuccess());
+  void showResendButton() => emit(const OtpShowResendButton());
+  void showSendOtpSuccess() => emit(const SendOtpSuccess());
   Future<void> verfiyVerificationCode() async {
-    emit(OtpLoading());
+    emit(const OtpLoading());
     var otpResult = await _verifyOtpUsecase.call(
       VerifyOtpParams(
         pinCode: pinCode,
@@ -58,7 +58,7 @@ class OtpCubit extends Cubit<OtpState> {
       (otpResult) async {
         await otpReason.onSuccess(otpResult);
         emit(
-          VerifyOtpSuccess(),
+          const VerifyOtpSuccess(),
         );
       },
     );

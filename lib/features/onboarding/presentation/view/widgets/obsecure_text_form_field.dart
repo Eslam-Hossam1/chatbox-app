@@ -50,7 +50,7 @@ class _ObsecureTextFormFieldState extends State<ObsecureTextFormField> {
         hintStyle: AppTextStyles.regular14(context).copyWith(
           color: context.secondaryTextColor,
         ),
-        suffixIconConstraints: BoxConstraints(),
+        suffixIconConstraints: const BoxConstraints(),
         suffixIcon: IconButton(
           onPressed: () {
             toggleObsecure();
@@ -59,8 +59,8 @@ class _ObsecureTextFormFieldState extends State<ObsecureTextFormField> {
               isObscure == true ? const OpenedEyeSvg() : const ClosedEyeIcon(),
         ),
         focusedBorder: buildBorder(context.primaryColor),
-        focusedErrorBorder: buildBorder(Color(0xffFF2D1B)),
-        errorBorder: buildBorder(Color(0xffFF2D1B)),
+        focusedErrorBorder: buildBorder(const Color(0xffFF2D1B)),
+        errorBorder: buildBorder(const Color(0xffFF2D1B)),
         enabledBorder: buildBorder(
           context.outlineColor,
           2,

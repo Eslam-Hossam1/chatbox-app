@@ -54,6 +54,6 @@ Future<void> _setupCaching() async {
   getIt.registerSingleton<AuthCredentialsManager>(
     AuthCredentialsManager(
         secureStorageService: getIt<SecureStorageService>(),
-        jwtDecoder: JwtDecoderServiceImpl()),
+        jwtDecoder: const JwtDecoderServiceImpl()),
   );
 }

@@ -6,7 +6,7 @@ import 'custom_colors.dart';
 
 abstract class AppThemes {
   static final ThemeData lightTheme = ThemeData(
-    textTheme: GoogleFonts.interTextTheme(),
+    textTheme: GoogleFonts.robotoTextTheme(),
     dialogBackgroundColor: AppColors.lightDialogBackground,
     scaffoldBackgroundColor: AppColors.lightScaffoldBackground,
     brightness: Brightness.light,
@@ -16,7 +16,7 @@ abstract class AppThemes {
       onSurfaceVariant: AppColors.lightOnSurfaceVariant,
       outline: AppColors.lightOutline,
     ),
-    extensions: <ThemeExtension<dynamic>>[
+    extensions: const <ThemeExtension<dynamic>>[
       CustomColors(
         mainTextColor: AppColors.lightMainTextColor,
         secondaryTextColor: AppColors.lightSecondaryTextColor,
@@ -29,10 +29,10 @@ abstract class AppThemes {
   );
 
   static final ThemeData darkTheme = ThemeData(
-    textTheme: GoogleFonts.interTextTheme(),
+    textTheme: GoogleFonts.robotoTextTheme(),
     dialogBackgroundColor: AppColors.darkDialogBackground,
     scaffoldBackgroundColor: AppColors.darkScaffoldBackground,
-    colorScheme: ColorScheme.dark(
+    colorScheme: const ColorScheme.dark(
       primary: AppColors.darkPrimary,
       secondary: AppColors.darkSecondary,
       onSurfaceVariant: AppColors.darkOnSurfaceVariant,
@@ -40,7 +40,7 @@ abstract class AppThemes {
       outline: AppColors.darkOutline,
     ),
     brightness: Brightness.dark,
-    extensions: <ThemeExtension<dynamic>>[
+    extensions: const <ThemeExtension<dynamic>>[
       CustomColors(
         mainTextColor: AppColors.darkMainTextColor,
         secondaryTextColor: AppColors.darkSecondaryTextColor,

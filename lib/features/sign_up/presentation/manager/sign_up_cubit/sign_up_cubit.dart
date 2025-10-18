@@ -13,7 +13,7 @@ class SignUpCubit extends Cubit<SignUpState> {
   String password = '';
   String username = '';
   Future<void> signUp() async {
-    emit(SignUpLoading());
+    emit(const SignUpLoading());
 
     final result = await signUpUseCase.call(
       SignUpParams(
@@ -28,7 +28,7 @@ class SignUpCubit extends Cubit<SignUpState> {
       (failure) {
         emit(SignUpFailure(failure.errMsg));
       },
-      (success) => emit(SignUpSuccess()),
+      (success) => emit(const SignUpSuccess()),
     );
   }
 }

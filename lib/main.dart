@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
+
 import 'chatbox_app.dart';
 import 'core/config/app_initializer.dart';
-import 'package:flutter/material.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

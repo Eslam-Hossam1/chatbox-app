@@ -16,7 +16,7 @@ class OnboardingView extends StatelessWidget {
         child: Stack(
           children: [
             ...onBoardingGradients,
-            SafeArea(
+            const SafeArea(
               child: OnboardingViewBody(),
             )
           ],

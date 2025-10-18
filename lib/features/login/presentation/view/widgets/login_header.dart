@@ -8,7 +8,7 @@ class LoginHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SliverToBoxAdapter(
+    return const SliverToBoxAdapter(
       child: SliverAuthHeaderText(
         title: 'Welcome to Chatbox',
         subtitle:

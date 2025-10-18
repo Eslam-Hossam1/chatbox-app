@@ -13,7 +13,7 @@ class OurAppIsPerfectText extends StatelessWidget {
       child: Text(
         'Our chat app is the perfect way to stay\nconnected with friends and family.',
         style: AppTextStyles.regular16(context, upperLimitRatio: 1.75).copyWith(
-          color: Color(0xffB9C1BE),
+          color: const Color(0xffB9C1BE),
           height: 26 / 16,
         ),
       ),

@@ -25,7 +25,7 @@ class SliverAuthHeaderText extends StatelessWidget {
               fontWeight: FontWeight.w900,
             ),
           ),
-          HeightSpace(
+          const HeightSpace(
             height: 17,
           ),
           Text(

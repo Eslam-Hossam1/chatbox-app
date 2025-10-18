@@ -35,7 +35,7 @@ class PasswordSliverTextFormField extends StatelessWidget {
             onSaved: onSaved,
             validator: FormValidators.passwordTextFormFieldValidator,
           ),
-          HeightSpace(height: 12),
+          const HeightSpace(height: 12),
         ],
       ),
     );

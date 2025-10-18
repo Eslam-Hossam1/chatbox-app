@@ -21,7 +21,7 @@ class OtpRoute {
             verifyOtpUsecase: VerifyOtpUsecase(otpRepo: getIt<OtpRepoImpl>()),
             otpReason: otpReason,
           ),
-          child: OtpView(),
+          child: const OtpView(),
         );
       });
 

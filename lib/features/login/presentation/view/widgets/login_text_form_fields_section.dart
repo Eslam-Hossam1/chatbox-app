@@ -13,20 +13,20 @@ class LoginTextFormFieldsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double heightSpace = 30;
+    const double heightSpace = 30;
     final loginCubit = context.read<LoginCubit>();
     return SliverMainAxisGroup(
       slivers: [
         EmailSliverTextFormField(
           onSaved: (value) => loginCubit.email = value!,
         ),
-        SliverHeightSpace(height: heightSpace),
+        const SliverHeightSpace(height: heightSpace),
         PasswordSliverTextFormField(
           onSaved: (value) => loginCubit.password = value!,
           hint: 'Enter your password',
         ),
-        SliverHeightSpace(height: 10),
-        ForgotPasswordClickableText(),
+        const SliverHeightSpace(height: 10),
+        const ForgotPasswordClickableText(),
       ],
     );
   }

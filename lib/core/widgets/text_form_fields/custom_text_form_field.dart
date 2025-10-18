@@ -52,8 +52,8 @@ class CustomTextFormField extends StatelessWidget {
               bottom: 12.h,
             ),
         focusedBorder: focusedBorder ?? buildBorder(context.primaryColor),
-        focusedErrorBorder: buildBorder(Color(0xffFF2D1B)),
-        errorBorder: buildBorder(Color(0xffFF2D1B)),
+        focusedErrorBorder: buildBorder(const Color(0xffFF2D1B)),
+        errorBorder: buildBorder(const Color(0xffFF2D1B)),
         enabledBorder: enabledBorder ??
             buildBorder(
               context.outlineColor,

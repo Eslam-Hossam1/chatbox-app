@@ -39,7 +39,7 @@ class AuthRoutes {
           ),
         ),
       ),
-      child: SignUpView(),
+      child: const SignUpView(),
     ),
   );
 
@@ -56,7 +56,7 @@ class AuthRoutes {
           ),
         ),
       ),
-      child: LoginView(),
+      child: const LoginView(),
     ),
   );
 
@@ -72,7 +72,7 @@ class AuthRoutes {
           ),
         ),
       ),
-      child: ForgotPasswordView(),
+      child: const ForgotPasswordView(),
     ),
   );
 
@@ -88,7 +88,7 @@ class AuthRoutes {
           ),
         ),
       ),
-      child: ResetPasswordView(),
+      child: const ResetPasswordView(),
     ),
   );
 

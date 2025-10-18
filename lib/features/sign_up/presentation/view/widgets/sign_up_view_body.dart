@@ -30,13 +30,13 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
       child: AppPadding(
         child: CustomScrollView(
           slivers: [
-            SliverHeightSpace(
+            const SliverHeightSpace(
               height: 40,
             ),
-            SignUpHeader(),
-            SliverHeightSpace(height: 60),
-            SignUpTextFormFieldsSection(),
-            SliverHeightSpace(height: 40),
+            const SignUpHeader(),
+            const SliverHeightSpace(height: 60),
+            const SignUpTextFormFieldsSection(),
+            const SliverHeightSpace(height: 40),
             SignUpButtonAndAlreadyHaveAccountSection(
               formKey: _formKey,
               enableAutoValidation: _enableAutoValidation,

@@ -21,7 +21,7 @@ class SignUpRepoImpl implements SignUpRepo {
       await _signUpRemoteDataSource.signUp(
         signUpRequestBody: SignUpRequestBody.fromParams(signUpParams),
       );
-      return Right(null);
+      return const Right(null);
     } catch (e) {
       if (e is DioException) {
         return Left(DioApiFailure.fromDioException(e));

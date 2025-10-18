@@ -30,13 +30,13 @@ class _LoginViewBodyState extends State<LoginViewBody> {
       child: AppPadding(
         child: CustomScrollView(
           slivers: [
-            SliverHeightSpace(
+            const SliverHeightSpace(
               height: 40,
             ),
-            LoginHeader(),
-            SliverHeightSpace(height: 60),
-            LoginTextFormFieldsSection(),
-            SliverHeightSpace(height: 40),
+            const LoginHeader(),
+            const SliverHeightSpace(height: 60),
+            const LoginTextFormFieldsSection(),
+            const SliverHeightSpace(height: 40),
             LoginButtonAndDontHaveAnEmailSection(
               formKey: _formKey,
               enableAutoValidation: _enableAutoValidation,

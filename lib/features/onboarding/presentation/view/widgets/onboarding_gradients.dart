@@ -8,7 +8,7 @@ final List<Widget> onBoardingGradients = [
     child: Container(
       width: 600.w,
       height: 600.h,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: RadialGradient(
           colors: [
             //      Color(0x66892cdc), // More intense purple
@@ -27,7 +27,7 @@ final List<Widget> onBoardingGradients = [
     child: Container(
       width: 500.w,
       height: 500.h,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: RadialGradient(
           colors: [
             // Color.fromARGB(135, 141, 71, 206), // Bright purple
@@ -46,7 +46,7 @@ final List<Widget> onBoardingGradients = [
     child: Container(
       width: 450.w,
       height: 450.h,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: RadialGradient(
           colors: [
             //  Color(0x77892cdc),
@@ -65,7 +65,7 @@ final List<Widget> onBoardingGradients = [
     child: Container(
       width: 400.w,
       height: 400.h,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: RadialGradient(
           colors: [
             //   Color(0x66662d91),
@@ -84,7 +84,7 @@ final List<Widget> onBoardingGradients = [
     child: Container(
       width: 350.w,
       height: 350.h,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: RadialGradient(
           colors: [
             //  Color(0x44a855f7),
