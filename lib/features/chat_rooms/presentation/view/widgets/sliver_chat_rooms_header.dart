@@ -1,4 +1,3 @@
-
 import 'package:chatbox_app/core/utils/constants.dart';
 import 'package:chatbox_app/core/widgets/custom_app_bar_text_title.dart';
 import 'package:chatbox_app/core/widgets/custom_cached_network_image.dart';
@@ -14,21 +13,24 @@ class SliverChatRoomsHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          const SearchIconButton(),
-          const CustomAppBarTextTitle(
-            title: 'Home',
-          ),
-          ClipOval(
-            child: CustomCachedNetworkImage(
-              width: 44.w,
-              height: 44.w,
-              url: Constants.personUrlImageTest,
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: Constants.chatRoomsPadding.w),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const SearchIconButton(),
+            const CustomAppBarTextTitle(
+              title: 'Home',
             ),
-          ),
-        ],
+            ClipOval(
+              child: CustomCachedNetworkImage(
+                width: 44.w,
+                height: 44.w,
+                url: Constants.personUrlImageTest,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

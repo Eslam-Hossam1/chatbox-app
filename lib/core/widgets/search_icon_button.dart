@@ -6,15 +6,15 @@ import 'package:flutter_svg/svg.dart';
 class SearchIconButton extends StatelessWidget {
   const SearchIconButton({
     super.key,
-    this.onPressed,
+    this.onTap,
   });
-  final void Function()? onPressed;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(
-      onPressed: onPressed,
-      icon: SvgPicture.asset(
+    return GestureDetector(
+      onTap: onTap,
+      child: SvgPicture.asset(
         Assets.imagesSvgsSearch,
         colorFilter: ColorFilter.mode(context.mainTextColor, BlendMode.srcIn),
       ),
