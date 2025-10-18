@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/widgets/app_padding.dart';
+import '../../../../../core/widgets/padding/auth_views_padding.dart';
 import '../../../../../core/widgets/sliver_sticky_footer.dart';
 import '../../../../../core/widgets/spacing/sliver_height_space.dart';
 import 'chat_box_svg.dart';
@@ -15,7 +15,7 @@ class OnboardingViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const AppPadding(
+    return const AuthViewsPadding(
       child: CustomScrollView(
         slivers: [
           SliverHeightSpace(

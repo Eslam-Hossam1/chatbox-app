@@ -300,6 +300,21 @@ abstract class AppTextStyles {
       ),
     );
   }
+  static TextStyle bold13(
+    context, {
+    double? lowerLimitRatio,
+    double? upperLimitRatio,
+  }) {
+    return TextStyle(
+      fontWeight: FontWeight.w700,
+      fontSize: _getResponsiveText(
+        context,
+        baseFontSize: 13,
+        lowerLimitRatio: lowerLimitRatio,
+        upperLimitRatio: upperLimitRatio,
+      ),
+    );
+  }
 
   // Font size 13
   static TextStyle regular13(

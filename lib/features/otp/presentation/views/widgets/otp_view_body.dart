@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/widgets/app_padding.dart';
+import '../../../../../core/widgets/padding/auth_views_padding.dart';
 import '../../../../../core/widgets/sliver_sticky_footer.dart';
 import '../../../../../core/widgets/spacing/height_space.dart';
 import '../../../../../core/widgets/spacing/sliver_height_space.dart';
@@ -30,7 +30,7 @@ class _OtpViewBodyState extends State<OtpViewBody> {
     return Form(
       key: formKey,
       autovalidateMode: autovalidateMode,
-      child: AppPadding(
+      child: AuthViewsPadding(
         child: CustomScrollView(
           slivers: [
             const SliverHeightSpace(

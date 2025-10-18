@@ -8,10 +8,8 @@ class WidthSpace extends StatelessWidget {
   final double width;
   @override
   Widget build(BuildContext context) {
-    return SliverToBoxAdapter(
-      child: SizedBox(
-        width: width.w,
-      ),
+    return SizedBox(
+      width: width.w,
     );
   }
 }
