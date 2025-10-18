@@ -1,4 +1,4 @@
-import 'chat_rooms_route.dart';
+import 'chat_routes.dart';
 import 'package:go_router/go_router.dart';
 
 import 'auth_routes.dart';
@@ -10,6 +10,6 @@ class AppRoutes {
     ...OnboardingRoute.routes,
     ...AuthRoutes.routes,
     ...OtpRoute.routes,
-    ...ChatRoomsRoute.routes,
+    ...ChatRoutes.routes,
   ];
 }
