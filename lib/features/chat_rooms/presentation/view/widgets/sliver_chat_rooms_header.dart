@@ -17,8 +17,8 @@ class SliverChatRoomsHeader extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SearchIconButton(),
-          CustomAppBarTextTitle(
+          const SearchIconButton(),
+          const CustomAppBarTextTitle(
             title: 'Home',
           ),
           ClipOval(

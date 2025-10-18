@@ -17,11 +17,11 @@ class ResendButtonBuilder extends StatelessWidget {
           current is SendOtpSuccess,
       builder: (context, state) {
         if (state is OtpInitial) {
-          return ResendButtonPlaceholder();
+          return const ResendButtonPlaceholder();
         } else if (state is OtpShowResendButton) {
-          return ResendCodeActiveButton();
+          return const ResendCodeActiveButton();
         } else {
-          return ResendCodeWithTimer();
+          return const ResendCodeWithTimer();
         }
       },
     );

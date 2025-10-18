@@ -34,16 +34,16 @@ class _ResetPasswordViewBodyState extends State<ResetPasswordViewBody> {
       child: AppPadding(
         child: CustomScrollView(
           slivers: [
-            SliverHeightSpace(
+            const SliverHeightSpace(
               height: 40,
             ),
-            ResetPasswordHeader(),
-            SliverHeightSpace(height: 60),
+            const ResetPasswordHeader(),
+            const SliverHeightSpace(height: 60),
             PasswordSliverTextFormField(
               onSaved: (value) => resetPasswordCubit.newPassword = value!,
               hint: 'Enter your new strong password',
             ),
-            SliverHeightSpace(height: 40),
+            const SliverHeightSpace(height: 40),
             ResetPasswordButtonSection(
               formKey: _formKey,
               enableAutoValidation: _enableAutoValidation,

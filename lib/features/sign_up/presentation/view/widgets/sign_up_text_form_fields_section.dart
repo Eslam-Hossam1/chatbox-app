@@ -15,27 +15,27 @@ class SignUpTextFormFieldsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double heightSpace = 30;
+    const double heightSpace = 30;
     final signUpCubit = context.read<SignUpCubit>();
     return SliverMainAxisGroup(
       slivers: [
         DisplayNameSliverTextFormField(
           onSaved: (value) => signUpCubit.displayName = value ?? '',
         ),
-        SliverHeightSpace(height: heightSpace),
+        const SliverHeightSpace(height: heightSpace),
         UsernameSliverTextFormField(
           onSaved: (value) => signUpCubit.username = value ?? '',
         ),
-        SliverHeightSpace(height: heightSpace),
+        const SliverHeightSpace(height: heightSpace),
         EmailSliverTextFormField(
           onSaved: (value) => signUpCubit.email = value ?? '',
         ),
-        SliverHeightSpace(height: heightSpace),
+        const SliverHeightSpace(height: heightSpace),
         PasswordSliverTextFormField(
           onSaved: (value) => signUpCubit.password = value ?? '',
           hint: 'At least 6 characters',
         ),
-        SliverHeightSpace(height: heightSpace),
+        const SliverHeightSpace(height: heightSpace),
       ],
     );
   }

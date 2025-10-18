@@ -33,20 +33,20 @@ class _OtpViewBodyState extends State<OtpViewBody> {
       child: AppPadding(
         child: CustomScrollView(
           slivers: [
-            SliverHeightSpace(
+            const SliverHeightSpace(
               height: 100,
             ),
-            EnterOtpSection(),
+            const EnterOtpSection(),
             SliverStickyFooter(
               children: [
                 VerifyButton(
                   enableAutoValidation: enableAutoValidation,
                   formKey: formKey,
                 ),
-                HeightSpace(
+                const HeightSpace(
                   height: 16,
                 ),
-                ResendButtonBuilder(),
+                const ResendButtonBuilder(),
               ],
             ),
           ],

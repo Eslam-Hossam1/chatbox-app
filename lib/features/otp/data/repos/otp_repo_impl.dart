@@ -21,7 +21,7 @@ class OtpRepoImpl implements OtpRepo {
       await _otpRemoteDataSource.sendOtp(
         otpReason: otpReason,
       );
-      return Right(null);
+      return const Right(null);
     } on Exception catch (e) {
       if (e is DioException) {
         return Left(

@@ -15,7 +15,7 @@ class OnboardingViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppPadding(
+    return const AppPadding(
       child: CustomScrollView(
         slivers: [
           SliverHeightSpace(

@@ -13,7 +13,7 @@ class ForgotPasswordCubit extends Cubit<ForgotPasswordState> {
   String email = '';
 
   Future<void> forgotPassword() async {
-    emit(ForgotPasswordLoading());
+    emit(const ForgotPasswordLoading());
 
     final result = await forgotPasswordUseCase.call(
       ForgotPasswordParams(
@@ -25,7 +25,7 @@ class ForgotPasswordCubit extends Cubit<ForgotPasswordState> {
       (failure) {
         emit(ForgotPasswordFailure(errMessage: failure.errMsg));
       },
-      (success) => emit(ForgotPasswordSuccess()),
+      (success) => emit(const ForgotPasswordSuccess()),
     );
   }
 }

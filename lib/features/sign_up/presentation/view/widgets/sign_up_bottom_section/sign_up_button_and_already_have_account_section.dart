@@ -22,8 +22,8 @@ class SignUpButtonAndAlreadyHaveAccountSection extends StatelessWidget {
           formKey: formKey,
           enableAutoValidation: enableAutoValidation,
         ),
-        HeightSpace(height: 16),
-        AlreadyHaveAnAccount(),
+        const HeightSpace(height: 16),
+        const AlreadyHaveAnAccount(),
       ],
     );
   }

@@ -60,7 +60,7 @@ class _OtpViewState extends State<OtpView> {
                   context,
                 );
               },
-              child: Scaffold(
+              child: const Scaffold(
                 body: SafeArea(child: OtpViewBody()),
               ),
             ),

@@ -23,7 +23,7 @@ class ForgotPasswordRepoImpl implements ForgotPasswordRepo {
         forgotPasswordRequestBody:
             ForgotPasswordRequestBody.fromParams(forgotPasswordParams),
       );
-      return Right(null);
+      return const Right(null);
     } catch (e) {
       if (e is DioException) {
         return Left(DioApiFailure.fromDioException(e));

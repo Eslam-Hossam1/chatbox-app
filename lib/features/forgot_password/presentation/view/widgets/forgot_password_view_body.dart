@@ -34,15 +34,15 @@ class _ForgotPasswordViewBodyState extends State<ForgotPasswordViewBody> {
       child: AppPadding(
         child: CustomScrollView(
           slivers: [
-            SliverHeightSpace(
+            const SliverHeightSpace(
               height: 40,
             ),
-            ForgotPasswordHeader(),
-            SliverHeightSpace(height: 60),
+            const ForgotPasswordHeader(),
+            const SliverHeightSpace(height: 60),
             EmailSliverTextFormField(
               onSaved: (value) => forgotPasswordCubit.email = value!,
             ),
-            SliverHeightSpace(height: 40),
+            const SliverHeightSpace(height: 40),
             ForgotPasswordButtonSection(
               formKey: _formKey,
               enableAutoValidation: _enableAutoValidation,

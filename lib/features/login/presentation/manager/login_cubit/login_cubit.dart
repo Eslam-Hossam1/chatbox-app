@@ -19,7 +19,7 @@ class LoginCubit extends Cubit<LoginState> {
   String password = '';
 
   Future<void> login() async {
-    emit(LoginLoading());
+    emit(const LoginLoading());
 
     final result = await _loginUseCase.call(
       LoginParams(
@@ -37,7 +37,7 @@ class LoginCubit extends Cubit<LoginState> {
         await _authCredentialsManager.storeAccessToken(
           loginEntity.token,
         );
-        emit(LoginSuccess());
+        emit(const LoginSuccess());
       },
     );
   }

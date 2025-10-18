@@ -21,7 +21,7 @@ AwesomeDialog getCustomAwesomeDialog(BuildContext context,
     String? btnCancelText,
     void Function(DismissType)? onDismissCallback}) {
   return AwesomeDialog(
-    padding: EdgeInsets.symmetric(horizontal: 8),
+    padding: const EdgeInsets.symmetric(horizontal: 8),
     context: context,
     dialogType: dialogType,
     animType: animType ?? AnimType.rightSlide,

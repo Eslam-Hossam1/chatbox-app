@@ -115,6 +115,6 @@ abstract class DialogHelper {
     );
   }
 
-  static final String _warningExitConfirmationMessage =
+  static const String _warningExitConfirmationMessage =
       "Are you sure you want to leave? You haven’t completed the verification yet and you may lose your progress.";
 }

@@ -23,8 +23,8 @@ class LoginButtonAndDontHaveAnEmailSection extends StatelessWidget {
           formKey: formKey,
           enableAutoValidation: enableAutoValidation,
         ),
-        HeightSpace(height: 16),
-        DontHaveAnEmail(),
+        const HeightSpace(height: 16),
+        const DontHaveAnEmail(),
       ],
     );
   }

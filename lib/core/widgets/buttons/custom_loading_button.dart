@@ -8,7 +8,7 @@ class CustomLoadingButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomButton(
+    return const CustomButton(
       width: double.infinity,
       child: Center(
         child: CustomCircularProgressIndicator(

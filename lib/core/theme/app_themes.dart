@@ -16,7 +16,7 @@ abstract class AppThemes {
       onSurfaceVariant: AppColors.lightOnSurfaceVariant,
       outline: AppColors.lightOutline,
     ),
-    extensions: <ThemeExtension<dynamic>>[
+    extensions: const <ThemeExtension<dynamic>>[
       CustomColors(
         mainTextColor: AppColors.lightMainTextColor,
         secondaryTextColor: AppColors.lightSecondaryTextColor,
@@ -32,7 +32,7 @@ abstract class AppThemes {
     textTheme: GoogleFonts.interTextTheme(),
     dialogBackgroundColor: AppColors.darkDialogBackground,
     scaffoldBackgroundColor: AppColors.darkScaffoldBackground,
-    colorScheme: ColorScheme.dark(
+    colorScheme: const ColorScheme.dark(
       primary: AppColors.darkPrimary,
       secondary: AppColors.darkSecondary,
       onSurfaceVariant: AppColors.darkOnSurfaceVariant,
@@ -40,7 +40,7 @@ abstract class AppThemes {
       outline: AppColors.darkOutline,
     ),
     brightness: Brightness.dark,
-    extensions: <ThemeExtension<dynamic>>[
+    extensions: const <ThemeExtension<dynamic>>[
       CustomColors(
         mainTextColor: AppColors.darkMainTextColor,
         secondaryTextColor: AppColors.darkSecondaryTextColor,
