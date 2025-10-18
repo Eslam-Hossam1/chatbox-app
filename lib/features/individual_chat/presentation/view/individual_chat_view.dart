@@ -1,3 +1,4 @@
+import 'package:chatbox_app/features/individual_chat/presentation/view/widgets/individual_chat_view_body.dart';
 import 'package:flutter/material.dart';
 
 class IndividualChatView extends StatelessWidget {
@@ -5,6 +6,10 @@ class IndividualChatView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Scaffold(
+      body: SafeArea(
+        child: IndividualChatViewBody(),
+      ),
+    );
   }
 }
