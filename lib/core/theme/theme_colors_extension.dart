@@ -13,9 +13,14 @@ extension ThemeColorsExtension on BuildContext {
   Color get cachedNetworkImagePlaceholderColor =>
       customColorsExtension.cachedNetworkImagePlaceholderColor;
   Color get formColor => customColorsExtension.formColor;
+  Color get myChatBubbleBackground => customColorsExtension.myChatBubbleBackground;
+  Color get otherChatBubbleBackground => customColorsExtension.otherChatBubbleBackground;
+  Color get myChatBubbleTextColor => customColorsExtension.myChatBubbleTextColor;
+  Color get otherChatBubbleTextColor => customColorsExtension.otherChatBubbleTextColor;
+  Color get bubbleTimeTextColor => customColorsExtension.bubbleTimeTextColor;
   Color get outlineColor => colorScheme.outline;
   Color get dialogBackgroundColor => theme.dialogBackgroundColor;
   Color get primaryColor => colorScheme.primary;
   Color get secondaryColor => colorScheme.secondary;
-  Color get scaffoldBackgroundColor => theme.scaffoldBackgroundColor;
+  Color get scaffoldBackgroundColor => theme.scaffoldBackgroundColor; 
 }

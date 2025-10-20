@@ -7,12 +7,22 @@ class CustomColors extends ThemeExtension<CustomColors> {
   final Color formColor;
   final Color toastColor;
   final Color cachedNetworkImagePlaceholderColor;
+  final Color myChatBubbleBackground;
+  final Color otherChatBubbleBackground;
+  final Color myChatBubbleTextColor;
+  final Color otherChatBubbleTextColor;
+  final Color bubbleTimeTextColor;
   const CustomColors({
     required this.mainTextColor,
     required this.secondaryTextColor,
     required this.formColor,
     required this.toastColor,
     required this.cachedNetworkImagePlaceholderColor,
+    required this.myChatBubbleBackground,
+    required this.otherChatBubbleBackground,
+    required this.myChatBubbleTextColor,
+    required this.otherChatBubbleTextColor,
+    required this.bubbleTimeTextColor,
   });
 
   @override
@@ -22,6 +32,11 @@ class CustomColors extends ThemeExtension<CustomColors> {
     Color? formColor,
     Color? toastColor,
     Color? cachedNetworkImagePlaceholderColor,
+    Color? myChatBubbleBackground,
+    Color? otherChatBubbleBackground,
+    Color? myChatBubbleTextColor,
+    Color? otherChatBubbleTextColor,
+    Color? bubbleTimeTextColor,
   }) {
     return CustomColors(
       mainTextColor: mainTextColor ?? this.mainTextColor,
@@ -30,6 +45,11 @@ class CustomColors extends ThemeExtension<CustomColors> {
       toastColor: toastColor ?? this.toastColor,
       cachedNetworkImagePlaceholderColor: cachedNetworkImagePlaceholderColor ??
           this.cachedNetworkImagePlaceholderColor,
+      myChatBubbleBackground: myChatBubbleBackground ?? this.myChatBubbleBackground,
+      otherChatBubbleBackground: otherChatBubbleBackground ?? this.otherChatBubbleBackground,
+      myChatBubbleTextColor: myChatBubbleTextColor ?? this.myChatBubbleTextColor,
+      otherChatBubbleTextColor: otherChatBubbleTextColor ?? this.otherChatBubbleTextColor,
+      bubbleTimeTextColor: bubbleTimeTextColor ?? this.bubbleTimeTextColor,
     );
   }
 
@@ -46,6 +66,11 @@ class CustomColors extends ThemeExtension<CustomColors> {
           cachedNetworkImagePlaceholderColor,
           other.cachedNetworkImagePlaceholderColor,
           t)!,
+      myChatBubbleBackground: Color.lerp(myChatBubbleBackground, other.myChatBubbleBackground, t)!,
+      otherChatBubbleBackground: Color.lerp(otherChatBubbleBackground, other.otherChatBubbleBackground, t)!,
+      myChatBubbleTextColor: Color.lerp(myChatBubbleTextColor, other.myChatBubbleTextColor, t)!,
+      otherChatBubbleTextColor: Color.lerp(otherChatBubbleTextColor, other.otherChatBubbleTextColor, t)!,
+      bubbleTimeTextColor: Color.lerp(bubbleTimeTextColor, other.bubbleTimeTextColor, t)!,
     );
   }
 }
