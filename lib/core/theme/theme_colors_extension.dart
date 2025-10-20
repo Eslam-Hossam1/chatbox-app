@@ -17,7 +17,8 @@ extension ThemeColorsExtension on BuildContext {
   Color get otherChatBubbleBackground => customColorsExtension.otherChatBubbleBackground;
   Color get myChatBubbleTextColor => customColorsExtension.myChatBubbleTextColor;
   Color get otherChatBubbleTextColor => customColorsExtension.otherChatBubbleTextColor;
-  Color get bubbleTimeTextColor => customColorsExtension.bubbleTimeTextColor;
+  Color get myChatBubbleTimeTextColor => customColorsExtension.myChatBubbleTimeTextColor;
+  Color get otherChatBubbleTimeTextColor => customColorsExtension.otherChatBubbleTimeTextColor;
   Color get outlineColor => colorScheme.outline;
   Color get dialogBackgroundColor => theme.dialogBackgroundColor;
   Color get primaryColor => colorScheme.primary;

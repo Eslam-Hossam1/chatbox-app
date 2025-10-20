@@ -13,16 +13,21 @@ abstract class AppColors {
   static const Color lightFormColor = Color(0xFFF3F6F6);
   static const Color lightToastBackground = Color(0xFFF4F5F7);
   static const Color lightCachedNetworkImagePlacholderColor = Color(0xFFEBEBF4);
+// 💬 Chat Bubble Colors (Light)
+  static const Color lightMyChatBubbleBackground = Color(0xFF2EB4EA);
+  static const Color lightOtherChatBubbleBackground = Color(0xFFE5F6FD);
+  static const Color lightMyChatBubbleTextColor = Color(0xFFFFFFFF);
+  static const Color lightOtherChatBubbleTextColor = Color(0xFF0B0B0B);
+  static const Color lightMyChatBubbleTimeTextColor = Color(0xFFD1F5FF);
+  static const Color lightOtherChatBubbleTimeTextColor = Color(0xFF7D869C);
 
-  // 💬 Chat Bubble Colors (Light)
-  static const Color lightMyChatBubbleBackground =
-      Color(0xFFE5F9F4); // Soft green tint
-  static const Color lightOtherChatBubbleBackground =
-      Color(0xFFF2F3F5); // Light grey
-  static const Color lightMyChatBubbleTextColor =
-      Color(0xFF000E08); // Dark text
-  static const Color lightOtherChatBubbleTextColor = Color(0xFF000E08);
-  static const Color lightBubbleTimeTextColor = Color(0xFF9FA5C0); // Muted gray
+// 💬 Chat Bubble Colors (Dark)
+  static const Color darkMyChatBubbleBackground = Color(0xFF00ACD2);
+  static const Color darkOtherChatBubbleBackground = Color(0xFF1B2735);
+  static const Color darkMyChatBubbleTextColor = Color(0xFFFFFFFF);
+  static const Color darkOtherChatBubbleTextColor = Color(0xFFEDEDED);
+  static const Color darkMyChatBubbleTimeTextColor = Color(0xFFC8F1FF);
+  static const Color darkOtherChatBubbleTimeTextColor = Color(0xFF9FA9C1);
 
   // Dark Theme Colors
   static const Color darkPrimary = Color(0xFF1E8C6C);
@@ -37,14 +42,4 @@ abstract class AppColors {
   static const Color darkFormColor = Color(0xFF2E2E2E);
   static const Color darkToastBackground = Color(0xFF2E2E2E);
   static const Color darkCachedNetworkImagePlacholderColor = Color(0xFF3A3A3A);
-
-  // 💬 Chat Bubble Colors (Dark)
-  static const Color darkMyChatBubbleBackground =
-      Color(0xFF1E8C6C); // Same as primary tint
-  static const Color darkOtherChatBubbleBackground =
-      Color(0xFF2A2A2A); // Dark gray
-  static const Color darkMyChatBubbleTextColor = Color(0xFFFFFFFF);
-  static const Color darkOtherChatBubbleTextColor = Color(0xFFECEFF4);
-  static const Color darkBubbleTimeTextColor =
-      Color(0xFF9FA5C0); // Muted light gray
 }

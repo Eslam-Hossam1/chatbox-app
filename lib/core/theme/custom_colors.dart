@@ -11,7 +11,8 @@ class CustomColors extends ThemeExtension<CustomColors> {
   final Color otherChatBubbleBackground;
   final Color myChatBubbleTextColor;
   final Color otherChatBubbleTextColor;
-  final Color bubbleTimeTextColor;
+  final Color myChatBubbleTimeTextColor;
+  final Color otherChatBubbleTimeTextColor;
   const CustomColors({
     required this.mainTextColor,
     required this.secondaryTextColor,
@@ -22,7 +23,8 @@ class CustomColors extends ThemeExtension<CustomColors> {
     required this.otherChatBubbleBackground,
     required this.myChatBubbleTextColor,
     required this.otherChatBubbleTextColor,
-    required this.bubbleTimeTextColor,
+    required this.myChatBubbleTimeTextColor,
+    required this.otherChatBubbleTimeTextColor,
   });
 
   @override
@@ -36,7 +38,8 @@ class CustomColors extends ThemeExtension<CustomColors> {
     Color? otherChatBubbleBackground,
     Color? myChatBubbleTextColor,
     Color? otherChatBubbleTextColor,
-    Color? bubbleTimeTextColor,
+    Color? myChatBubbleTimeTextColor,
+    Color? otherChatBubbleTimeTextColor,
   }) {
     return CustomColors(
       mainTextColor: mainTextColor ?? this.mainTextColor,
@@ -49,7 +52,8 @@ class CustomColors extends ThemeExtension<CustomColors> {
       otherChatBubbleBackground: otherChatBubbleBackground ?? this.otherChatBubbleBackground,
       myChatBubbleTextColor: myChatBubbleTextColor ?? this.myChatBubbleTextColor,
       otherChatBubbleTextColor: otherChatBubbleTextColor ?? this.otherChatBubbleTextColor,
-      bubbleTimeTextColor: bubbleTimeTextColor ?? this.bubbleTimeTextColor,
+      myChatBubbleTimeTextColor: myChatBubbleTimeTextColor ?? this.myChatBubbleTimeTextColor,
+      otherChatBubbleTimeTextColor: otherChatBubbleTimeTextColor ?? this.otherChatBubbleTimeTextColor,
     );
   }
 
@@ -70,7 +74,8 @@ class CustomColors extends ThemeExtension<CustomColors> {
       otherChatBubbleBackground: Color.lerp(otherChatBubbleBackground, other.otherChatBubbleBackground, t)!,
       myChatBubbleTextColor: Color.lerp(myChatBubbleTextColor, other.myChatBubbleTextColor, t)!,
       otherChatBubbleTextColor: Color.lerp(otherChatBubbleTextColor, other.otherChatBubbleTextColor, t)!,
-      bubbleTimeTextColor: Color.lerp(bubbleTimeTextColor, other.bubbleTimeTextColor, t)!,
+      myChatBubbleTimeTextColor: Color.lerp(myChatBubbleTimeTextColor, other.myChatBubbleTimeTextColor, t)!,
+      otherChatBubbleTimeTextColor: Color.lerp(otherChatBubbleTimeTextColor, other.otherChatBubbleTimeTextColor, t)!,
     );
   }
 }

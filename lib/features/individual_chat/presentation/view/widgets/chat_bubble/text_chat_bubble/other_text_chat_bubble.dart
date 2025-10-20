@@ -18,7 +18,7 @@ class OtherTextChatBubble extends StatelessWidget {
       containerAlignment: Alignment.centerLeft,
       backgroundColor: context.otherChatBubbleBackground,
       textColor: context.otherChatBubbleTextColor,
-      timeTextColor: context.bubbleTimeTextColor,
+      timeTextColor: context.otherChatBubbleTimeTextColor,
       messageText: messageText,
       messageTime: messageDateTime,
     );

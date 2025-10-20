@@ -28,7 +28,8 @@ abstract class AppThemes {
         otherChatBubbleBackground: AppColors.lightOtherChatBubbleBackground,
         myChatBubbleTextColor: AppColors.lightMyChatBubbleTextColor,
         otherChatBubbleTextColor: AppColors.lightOtherChatBubbleTextColor,
-        bubbleTimeTextColor: AppColors.lightBubbleTimeTextColor,
+        myChatBubbleTimeTextColor: AppColors.lightMyChatBubbleTimeTextColor,
+        otherChatBubbleTimeTextColor: AppColors.lightOtherChatBubbleTimeTextColor,
       ),
     ],
   );
@@ -57,7 +58,8 @@ abstract class AppThemes {
         otherChatBubbleBackground: AppColors.darkOtherChatBubbleBackground,
         myChatBubbleTextColor: AppColors.darkMyChatBubbleTextColor,
         otherChatBubbleTextColor: AppColors.darkOtherChatBubbleTextColor,
-        bubbleTimeTextColor: AppColors.darkBubbleTimeTextColor,
+        myChatBubbleTimeTextColor: AppColors.darkMyChatBubbleTimeTextColor,
+        otherChatBubbleTimeTextColor: AppColors.darkOtherChatBubbleTimeTextColor,
       ),
     ],
   );
