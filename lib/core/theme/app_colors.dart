@@ -14,7 +14,7 @@ abstract class AppColors {
   static const Color lightToastBackground = Color(0xFFF4F5F7);
   static const Color lightCachedNetworkImagePlacholderColor = Color(0xFFEBEBF4);
 // 💬 Chat Bubble Colors (Light)
-  static const Color lightMyChatBubbleBackground = Color(0xFF2EB4EA);
+  static const Color lightMyChatBubbleBackground = Color(0xFF20A090);
   static const Color lightOtherChatBubbleBackground = Color(0xFFE5F6FD);
   static const Color lightMyChatBubbleTextColor = Color(0xFFFFFFFF);
   static const Color lightOtherChatBubbleTextColor = Color(0xFF0B0B0B);
@@ -22,7 +22,7 @@ abstract class AppColors {
   static const Color lightOtherChatBubbleTimeTextColor = Color(0xFF7D869C);
 
 // 💬 Chat Bubble Colors (Dark)
-  static const Color darkMyChatBubbleBackground = Color(0xFF00ACD2);
+  static const Color darkMyChatBubbleBackground = Color(0xFF1E8C6C);
   static const Color darkOtherChatBubbleBackground = Color(0xFF1B2735);
   static const Color darkMyChatBubbleTextColor = Color(0xFFFFFFFF);
   static const Color darkOtherChatBubbleTextColor = Color(0xFFEDEDED);
