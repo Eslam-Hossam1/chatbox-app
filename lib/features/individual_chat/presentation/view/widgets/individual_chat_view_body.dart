@@ -3,7 +3,7 @@ import 'package:chatbox_app/features/individual_chat/presentation/view/widgets/a
 import 'package:chatbox_app/features/individual_chat/presentation/view/widgets/chat_bubbles_list_view.dart';
 import 'package:chatbox_app/features/individual_chat/presentation/view/widgets/custom_chat_app_bar_divider.dart';
 import 'package:chatbox_app/features/individual_chat/presentation/view/widgets/custom_send_message_section_divider.dart';
-import 'package:chatbox_app/features/individual_chat/presentation/view/widgets/send_message_section.dart';
+import 'package:chatbox_app/features/individual_chat/presentation/view/widgets/send_message_section/send_message_section.dart';
 import 'package:flutter/material.dart';
 
 class IndividualChatViewBody extends StatelessWidget {
