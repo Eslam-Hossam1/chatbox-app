@@ -26,7 +26,7 @@ class ChatboxApp extends StatelessWidget {
             child: MaterialApp.router(
               debugShowCheckedModeBanner: false,
               routerConfig: AppRouter.router,
-              themeMode: mode,
+              themeMode: ThemeMode.light,
               theme: AppThemes.lightTheme,
               darkTheme: AppThemes.darkTheme,
             ),

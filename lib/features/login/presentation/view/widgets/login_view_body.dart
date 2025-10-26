@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/widgets/app_padding.dart';
+import '../../../../../core/widgets/padding/auth_views_padding.dart';
 import '../../../../../core/widgets/spacing/sliver_height_space.dart';
 import 'login_button_and_dont_have_an_email_section.dart';
 import 'login_header.dart';
@@ -27,7 +27,7 @@ class _LoginViewBodyState extends State<LoginViewBody> {
     return Form(
       key: _formKey,
       autovalidateMode: autovalidateMode,
-      child: AppPadding(
+      child: AuthViewsPadding(
         child: CustomScrollView(
           slivers: [
             const SliverHeightSpace(

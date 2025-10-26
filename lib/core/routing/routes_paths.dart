@@ -8,4 +8,5 @@ abstract class RoutePaths {
   static const resetPassword = "/reset-password";
   static const otp = "/otp";
   static const chatRooms = "/chat-rooms";
+  static const individualChat = "/individual-chat";
 }

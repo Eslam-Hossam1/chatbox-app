@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/widgets/app_padding.dart';
+import '../../../../../core/widgets/padding/auth_views_padding.dart';
 import '../../../../../core/widgets/spacing/sliver_height_space.dart';
 import 'sign_up_bottom_section/sign_up_button_and_already_have_account_section.dart';
 import 'sign_up_header.dart';
@@ -27,7 +27,7 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
     return Form(
       key: _formKey,
       autovalidateMode: autovalidateMode,
-      child: AppPadding(
+      child: AuthViewsPadding(
         child: CustomScrollView(
           slivers: [
             const SliverHeightSpace(

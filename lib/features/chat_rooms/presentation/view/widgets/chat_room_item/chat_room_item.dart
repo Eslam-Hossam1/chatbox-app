@@ -16,7 +16,7 @@ class ChatRoomItem extends StatelessWidget {
     return ListTile(
       onTap: () {},
       contentPadding: EdgeInsets.symmetric(
-        horizontal: Constants.chatRoomsPadding.w,
+        horizontal: Constants.chatViewsPadding.w,
       ),
       leading: ClipOval(
         child: CustomCachedNetworkImage(

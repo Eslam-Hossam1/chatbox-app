@@ -14,11 +14,17 @@ class SliverChatRoomsHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: Constants.chatRoomsPadding.w),
+        padding: EdgeInsets.symmetric(horizontal: Constants.chatViewsPadding.w),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const SearchIconButton(),
+            ConstrainedBox(
+              constraints: BoxConstraints(minWidth: 44.w),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: const SearchIconButton(),
+              ),
+            ),
             const CustomAppBarTextTitle(
               title: 'Home',
             ),

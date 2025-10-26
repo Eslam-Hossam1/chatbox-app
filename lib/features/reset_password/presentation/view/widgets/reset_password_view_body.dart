@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../../core/widgets/app_padding.dart';
+import '../../../../../core/widgets/padding/auth_views_padding.dart';
 import '../../../../../core/widgets/spacing/sliver_height_space.dart';
 import '../../../../../core/widgets/text_form_fields/password_sliver_text_form_field.dart';
 import '../../manager/reset_password_cubit/reset_password_cubit.dart';
@@ -31,7 +31,7 @@ class _ResetPasswordViewBodyState extends State<ResetPasswordViewBody> {
     return Form(
       key: _formKey,
       autovalidateMode: autovalidateMode,
-      child: AppPadding(
+      child: AuthViewsPadding(
         child: CustomScrollView(
           slivers: [
             const SliverHeightSpace(

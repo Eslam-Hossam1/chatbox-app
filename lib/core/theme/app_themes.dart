@@ -24,6 +24,12 @@ abstract class AppThemes {
         toastColor: AppColors.lightToastBackground,
         cachedNetworkImagePlaceholderColor:
             AppColors.lightCachedNetworkImagePlacholderColor,
+        myChatBubbleBackground: AppColors.lightMyChatBubbleBackground,
+        otherChatBubbleBackground: AppColors.lightOtherChatBubbleBackground,
+        myChatBubbleTextColor: AppColors.lightMyChatBubbleTextColor,
+        otherChatBubbleTextColor: AppColors.lightOtherChatBubbleTextColor,
+        myChatBubbleTimeTextColor: AppColors.lightMyChatBubbleTimeTextColor,
+        otherChatBubbleTimeTextColor: AppColors.lightOtherChatBubbleTimeTextColor,
       ),
     ],
   );
@@ -48,6 +54,12 @@ abstract class AppThemes {
         toastColor: AppColors.darkToastBackground,
         cachedNetworkImagePlaceholderColor:
             AppColors.darkCachedNetworkImagePlacholderColor,
+        myChatBubbleBackground: AppColors.darkMyChatBubbleBackground,
+        otherChatBubbleBackground: AppColors.darkOtherChatBubbleBackground,
+        myChatBubbleTextColor: AppColors.darkMyChatBubbleTextColor,
+        otherChatBubbleTextColor: AppColors.darkOtherChatBubbleTextColor,
+        myChatBubbleTimeTextColor: AppColors.darkMyChatBubbleTimeTextColor,
+        otherChatBubbleTimeTextColor: AppColors.darkOtherChatBubbleTimeTextColor,
       ),
     ],
   );
